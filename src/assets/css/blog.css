@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Noticia+Text|Noto+Serif&display=swap');
+
+.postitem {
+  padding: 90px 0;
+  font: 300 17px/28px Oxygen, Arial, Sans-Serif;
+  box-sizing: border-box;
+  display: block;
+  padding: 90px 0;
+}
+
+.wrapper {
+  font: 300 17px/28px Oxygen, Arial, Sans-Serif;
+  box-sizing: border-box;
+  max-width: 700px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.meta {
+  font: 300 17px/28px Oxygen, Arial, Sans-Serif;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h2.title {
+  font: 300 17px/28px Oxygen, Arial, Sans-Serif;
+  box-sizing: border-box;
+  margin: 45px 0;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 62px;
+  letter-spacing: -1px;
+}
+
+.postitem h2 a {
+  font: 300 17px/28px Oxygen, Arial, Sans-Serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 62px;
+  font-family: 'Noticia Text', serif;
+  letter-spacing: -1px;
+  box-sizing: border-box;
+  background-color: transparent;
+  text-decoration: none;
+  transition: color 0.15s ease-in, background 0.15s ease-in,
+    border-color 0.15s ease-in;
+  display: block;
+  color: #373737;
+}
+
+p.excerpt {
+  font: 300 17px/28px Oxygen, Arial, Sans-Serif;
+  box-sizing: border-box;
+  margin: 40px 0;
+  font-family: 'Noto Serif', serif;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 35px;
+  color: rgba(35, 37, 40, 0.7);
+  overflow: hidden;
+}
+
+a.author {
+  font: 300 17px/28px Oxygen, Arial, Sans-Serif;
+  box-sizing: border-box;
+  background-color: transparent;
+  text-decoration: none;
+  transition: color 0.15s ease-in, background 0.15s ease-in,
+    border-color 0.15s ease-in;
+  display: inline-block;
+  font-family: Montserrat, Arial, Sans-Serif;
+  font-size: 15px;
+  letter-spacing: -0.5px;
+  color: #b5b5b5;
+}
+
+a.time {
+  font: 300 17px/28px Oxygen, Arial, Sans-Serif;
+  list-style: none;
+  box-sizing: border-box;
+  background-color: transparent;
+  text-decoration: none;
+  transition: color 0.15s ease-in, background 0.15s ease-in,
+    border-color 0.15s ease-in;
+  color: #b5b5b5;
+  font-family: Montserrat, Arial, Sans-Serif;
+  font-size: 15px;
+  letter-spacing: -1px;
+  padding: 0 8px;
+}
+
+li.category {
+  font: 300 17px/28px Oxygen, Arial, Sans-Serif;
+  list-style: none;
+  box-sizing: border-box;
+  display: block;
+  float: left;
+}
+
+li.category a {
+  font: 300 17px/28px Oxygen, Arial, Sans-Serif;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  transition: color 0.15s ease-in, background 0.15s ease-in,
+    border-color 0.15s ease-in;
+  display: inline-block;
+  border-radius: 3px;
+  padding: 3px 15px;
+  font-family: Montserrat, Arial, Sans-Serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #fff;
+  background: #635cff;
+}
+
+li.readtime {
+  font: 300 17px/28px Oxygen, Arial, Sans-Serif;
+  list-style: none;
+  box-sizing: border-box;
+  display: block;
+  float: right;
+  margin-top: 3px;
+  text-transform: capitalize;
+}
