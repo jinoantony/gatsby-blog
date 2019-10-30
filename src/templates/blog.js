@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
 import { Layout } from '../components/common/Layout'
+import { SEO } from '../components/common/SEO'
 import { Header } from '../components/theme/Header'
 import BlogList from './BlogList'
 
@@ -8,14 +9,15 @@ import '../assets/css/blog.css'
 
 const Blog = ({ data, pageContext }) => (
 	<Layout>
+		<SEO title="Jino Antony | Blog" />
 		<Header />
 		<BlogList posts={data.allMarkdownRemark.edges} />
-		<div className="wrapper">
+		<div className= "navigator">
 			{pageContext.hasPrevPage && (
-				<Link to={pageContext.prevPagePath}>{'<< Previous'}</Link>
+				<Link className= "previous" to={pageContext.prevPagePath}>{'<< Previous'}</Link>
 			)}
 			{pageContext.hasNextPage && (
-				<Link to={pageContext.nextPagePath} style={{ float: 'right' }}>
+				<Link className= "next" to={pageContext.nextPagePath} style={{ float: 'right' }}>
 					Next >>
 				</Link>
 			)}
@@ -39,6 +41,7 @@ export const pageQuery = graphql`
 						author
 						date
 						tag
+						description
 					}
 					fields {
 						readingTime {

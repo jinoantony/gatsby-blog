@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Noticia+Text|Noto+Serif&display=swap');
 
 .postitem {
-  padding: 90px 0;
   font: 300 17px/28px Oxygen, Arial, Sans-Serif;
   box-sizing: border-box;
   display: block;
-  padding: 90px 0;
+  padding: 40px 0 20px 0;
 }
 
 .wrapper {
@@ -13,7 +12,26 @@
   box-sizing: border-box;
   max-width: 700px;
   width: 90%;
+  padding: 20px 0;
   margin: 0 auto;
+  border-bottom: 1px solid #afafaf;
+}
+
+.navigator {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0;
+  max-width: 700px;
+  margin-bottom: 10%;
+}
+
+.navigator .previous {
+  float: left;
+}
+
+.navigator .next {
+  float: right;
 }
 
 .meta {
@@ -125,4 +143,18 @@ li.readtime {
   float: right;
   margin-top: 3px;
   text-transform: capitalize;
+}
+
+
+@media (max-width: 480px){
+  .jXLsQo { padding: 4rem 0 4rem }
+}
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .jXLsQo { padding: 4rem 0 4rem }
+}
+
+@media (max-width: 768px), (min-width: 991px) {
+  .jXLsQo { padding: 4rem 0 4rem }
 }

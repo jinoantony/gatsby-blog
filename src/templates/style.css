@@ -6,6 +6,9 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
+
+@import url('https://fonts.googleapis.com/css?family=Noticia+Text|Noto+Serif:400,700&&display=swap');
+
 *,
 *::before,
 *::after {
@@ -11888,7 +11891,7 @@ body {
 
 .secondfont,
 .navbar-brand {
-  font-family: 'Playfair Display', 'Segoe UI', 'Helvetica Neue', 'Arial';
+  font-family: 'Noticia Text', serif;
 }
 
 img {
@@ -13514,3 +13517,10 @@ ul.ascii
 }
 
 /*# sourceMappingURL=main.css.map */
+article {
+  font-family: 'Noto Serif', serif;
+}
+
+h1.post-title {
+  font-size: 3rem;
+}

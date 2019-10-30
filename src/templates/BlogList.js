@@ -10,6 +10,7 @@ const BlogList = props =>
 			tag={post.node.frontmatter.tag}
 			readTime={post.node.fields.readingTime.text}
 			title={post.node.frontmatter.title}
+			description={post.node.frontmatter.description}
 			key={post.node.id}
 		/>
 	))

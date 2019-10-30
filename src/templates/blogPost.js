@@ -5,7 +5,6 @@ import { Layout, SEO } from 'Common'
 import { Header } from 'Theme'
 
 import './style.css'
-// import backArrow from '../images/back-arrow.svg'
 
 export default function Template({ data }) {
 	const post = data.markdownRemark
@@ -17,13 +16,13 @@ export default function Template({ data }) {
 
 			<div
 				className="container mb-10"
-				style={{ maxWidth: '760px', maxHeight: '200px' }}
+				style={{ maxWidth: '760px' }}
 			>
 				<div className="h-100 tofront">
 					<div className="row">
 						<div className="col-md-12 pt-3 pb-10 pr-6">
 							<p className="text-uppercase font-weight-bold" />
-							<h1 className="display-10 secondfont mb-3 font-weight-bold">
+							<h1 className="display-10 secondfont mb-3 font-weight-bold post-title">
 								{post.frontmatter.title}
 							</h1>
 							<p className="mb-3">{post.frontmatter.subtitle}</p>

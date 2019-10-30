@@ -4,6 +4,7 @@ date: '2019-10-22'
 title: 'My first blog post about lorem ipsum without no context'
 author: 'Jino Antony'
 tag: 'Demo'
+description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam neque justo, elementum a magna in, tempus bibendum neque.'
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam neque justo, elementum a magna in, tempus bibendum neque. In ut arcu sapien. Sed dignissim pretium nulla sit amet lobortis. Integer non imperdiet tortor. Cras porttitor commodo congue. Nunc non mauris vel dui rutrum bibendum. Duis aliquam sollicitudin euismod. Mauris suscipit diam non purus tincidunt, a fringilla elit efficitur. In a pharetra risus. Proin consequat venenatis mi, eu rutrum lacus convallis sed.

@@ -13,9 +13,7 @@ const Article = props => (
 				<a href={props.link}>{props.title}</a>
 			</h2>
 			<p className="excerpt">
-				Add Shades of Purple theme-based syntax highlighting to your WordPress
-				blog with the help of Prism.js syntax highlighter and enjoy high-quality
-				code coloring that improves your blog readability.
+				{props.description}
 			</p>
 			<a href="https://ahmadawais.com/author/ahmad-awais/" className="author">
 				Jino Antony

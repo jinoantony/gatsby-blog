@@ -83,7 +83,7 @@ module.exports = {
 							prompt: {
 								user: 'root',
 								host: 'localhost',
-								global: false,
+								global: true,
 							},
 						},
 					},
