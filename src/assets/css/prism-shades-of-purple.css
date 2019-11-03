@@ -197,3 +197,7 @@
  pre > code.line-highlight[data-end]:after {
      content: '';
  }
+
+ code.language-shell, pre.language-shell {
+     color: #fbb500;
+ }

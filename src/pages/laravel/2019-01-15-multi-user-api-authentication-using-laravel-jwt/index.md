@@ -13,29 +13,29 @@ RESTful API development using Laravel is quite easy. Laravel provides built-in s
 
 Let’s get started by installing a fresh Laravel application.
 
-```bash
-    composer create-project --prefer-dist laravel/laravel multi-jwt-auth
+```shell
+composer create-project --prefer-dist laravel/laravel multi-jwt-auth
 ```
 For using JWT in laravel there is a popular package called [jwt-auth](https://github.com/tymondesigns/jwt-auth) created by [Sean Tymon](https://github.com/tymondesigns). Let’s install that package also.
 
-```bash
-    composer require tymon/jwt-auth 1.0.*
+```shell
+composer require tymon/jwt-auth 1.0.*
 ```
 
 > Note: This article is only for Laravel version > 5.4 . You can read the full documentation [here](https://jwt-auth.readthedocs.io/en/develop)
 
 Next, publish the config file using the command
 
-```bash
-    php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider"
+```shell
+php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider"
 ```
 
 This will publish a config file config/jwt.php that allows you to configure the basics of this package.
 
 Now we need to set a secret key for the encryption and decryption of JWT tokens. For that run the below artisan command.
 
-```bash
-    php artisan jwt:secret
+```shell
+php artisan jwt:secret
 ```
 
 This will update your .env file with something like JWT_SECRET=foobar
@@ -52,17 +52,42 @@ We have 3 types of users.
 
 Let’s create the migrations.
 
-![](https://cdn-images-1.medium.com/max/2516/1*iJS80l6Li_gMWDkq-9i3Pg.png)
+```php
+Schema::create('users', function (Blueprint $table) {
+    $table->increments('id');
+    $table->string('name');
+    $table->string('email')->unique();
+    $table->string('password');
+    $table->timestamps();
+});
+
+Schema::create('admins', function (Blueprint $table) {
+    $table->increments('id');
+    $table->string('name');
+    $table->string('email')->unique();
+    $table->string('password');
+    $table->timestamps();
+});
+
+Schema::create('subadmins', function (Blueprint $table) {
+    $table->increments('id');
+    $table->string('name');
+    $table->string('email')->unique();
+    $table->string('password');
+    $table->timestamps();
+});
+```
 
 Now run the migrations.
 
-```bash
-    php artisan migrate
+```shell
+php artisan migrate
 ```
 
 Create corresponding models.
 
-<!-- <iframe src="https://medium.com/media/f7ab7f8007017b4599dc4155c82062aa" frameborder=0></iframe> -->
+`gist:jinoantony/c9f2a4b5893020b298e7dc6904081741#User.php`
+
 > Note: Be sure to implement the JWTSubject contract.
 
 ### Configuring the Auth Guard
@@ -72,45 +97,45 @@ jwt-auth works by extending laravel’s auth system. So we need to configure the
 Open config/auth.php and add these guards.
 
 ```php
-    'guards' => [
+'guards' => [
 
-            'admins' => [
-                'driver' => 'jwt',
-                'provider' => 'admins',
-            ],
+    'admins' => [
+        'driver' => 'jwt',
+        'provider' => 'admins',
+    ],
 
-            'subadmins' => [
-                'driver' => 'jwt',
-                'provider' => 'subadmins',
-            ],
+    'subadmins' => [
+        'driver' => 'jwt',
+        'provider' => 'subadmins',
+    ],
 
-            'users' => [
-                'driver' => 'jwt',
-                'provider' => 'users',
-            ],
-     ],
+    'users' => [
+        'driver' => 'jwt',
+        'provider' => 'users',
+    ],
+],
 ```
 
 Now let’s configure the provider details. Add these to the providers section.
 
 ```php
-    'providers' => [
+'providers' => [
 
-            'admins' => [
-                'driver' => 'eloquent',
-                'model' => App\Admin::class,
-            ],
-
-            'subadmins' => [
-                'driver' => 'eloquent',
-                'model' => App\Subadmin::class,
-            ],
-
-            'users' => [
-                'driver' => 'eloquent',
-                'model' => App\User::class,
-            ],
+    'admins' => [
+        'driver' => 'eloquent',
+        'model' => App\Admin::class,
     ],
+
+    'subadmins' => [
+        'driver' => 'eloquent',
+        'model' => App\Subadmin::class,
+    ],
+
+    'users' => [
+        'driver' => 'eloquent',
+        'model' => App\User::class,
+    ],
+],
 ```
 
 ### What is this guards Really? 😇
@@ -124,26 +149,28 @@ You can also add more guards if you have more user hierarchies. If you need to k
 Now let's configure the jwt settings. Open config/jwt.php and set the lock_user property to true.
 
 ```php
-    'lock_subject' => true,
+'lock_subject' => true,
 ```
 
 What this does is it instruct jwt to check if the user is authenticated against the correct table. This is done by adding a hash value of the table name to the generated token.
 
 Now let’s create a custom middleware to instruct laravel to use the correct guard per route. Run the below artisan command to create a middleware.
 
-```bash
-    php artisan make:middleware AssignGuard
+```shell
+php artisan make:middleware AssignGuard
 ```
 
-<!-- <iframe src="https://medium.com/media/6831fabb4782d54248d634aa85c34d5f" frameborder=0></iframe> -->
+`gist:jinoantony/7cfe0fbae211185ee73060b136e38323#AssignGuard.php`
 
 In order the middleware to work, we need to register it. For that, go to app/Http/Kernel.php and add the following to the $routeMiddleware array.
 
 ```php
-    'assign.guard' => \App\Http\Middleware\AssignGuard::class,
+'assign.guard' => \App\Http\Middleware\AssignGuard::class,
 ```
 
 Now add the middleware to the routes.
+
+`gist:jinoantony/3d9958805338fa66e667500aa0196d05#api.php`
 
 <!-- <iframe src="https://medium.com/media/3d0a9a8f91ef22d5539a6b7e53847560" frameborder=0></iframe> -->
 

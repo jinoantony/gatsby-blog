@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Noticia+Text|Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Noticia+Text|Noto+Serif&display=swap');
 
 .postitem {
   font: 300 17px/28px Oxygen, Arial, Sans-Serif;
@@ -145,6 +145,13 @@ li.readtime {
   text-transform: capitalize;
 }
 
+.gist td {
+  border-bottom: unset;
+}
+
+ul li.readtime a {
+  font-family: Montserrat, Arial, Sans-Serif;
+}
 
 @media (max-width: 480px){
   .jXLsQo { padding: 4rem 0 4rem }
