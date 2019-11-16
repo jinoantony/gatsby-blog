@@ -6,7 +6,7 @@ import '../assets/css/blog.css'
 const BlogList = props =>
 	props.posts.map(post => (
 		<Article
-			link={post.node.frontmatter.path}
+			link={post.node.frontmatter.slug}
 			tag={post.node.frontmatter.tag}
 			readTime={post.node.fields.readingTime.text}
 			title={post.node.frontmatter.title}

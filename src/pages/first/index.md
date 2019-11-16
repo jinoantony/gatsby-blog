@@ -1,5 +1,5 @@
 ---
-path: '/first-post'
+slug: '/first-post'
 date: '2019-10-22'
 title: 'My first blog post about lorem ipsum without no context'
 author: 'Jino Antony'

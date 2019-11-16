@@ -19,32 +19,3 @@
   color: #8f8f8f;
   font-family: 'Montserrat', sans-serif;
 }
-
-a.platforms svg {
-  width: 1.5rem;
-  fill: grey;
-}
-
-a.platforms {
-  padding: 3px;
-}
-
-svg#twitter:hover {
-  fill: #55acee;
-}
-
-svg#github:hover {
-  fill: black;
-}
-
-svg#instagram:hover {
-  fill: #ea4c89;
-}
-
-svg#linkedin:hover {
-  fill: #2867B2;
-}
-
-svg#email:hover {
-  fill: black;
-}

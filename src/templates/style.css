@@ -12641,7 +12641,7 @@ article blockquote {
   position: relative;
 }
 
-article:first-letter {
+article.first-capital:first-letter {
   float: left;
   font-size: 5em;
   line-height: 1;

@@ -8,7 +8,8 @@ import './style.css'
 
 export default function Template({ data }) {
 	const post = data.markdownRemark
-
+	const articleClass = "article-post" + (post.frontmatter.firstLetter == true ? ' first-capital' : '')
+	
 	return (
 		<Layout>
 			<SEO title={post.frontmatter.title} />
@@ -46,7 +47,7 @@ export default function Template({ data }) {
 				<div className="row justify-content-center">
 					<div className="col-md-8 col-lg-12">
 						<article
-							className="article-post"
+							className={articleClass}
 							dangerouslySetInnerHTML={{ __html: post.html }}
 						/>
 					</div>
@@ -57,14 +58,15 @@ export default function Template({ data }) {
 }
 
 export const postQuery = graphql`
-	query BlogPostByPath($path: String!) {
-		markdownRemark(frontmatter: { path: { eq: $path } }) {
+	query BlogPostBySlug($slug: String!) {
+		markdownRemark(frontmatter: { slug: { eq: $slug } }) {
 			html
 			frontmatter {
-				path
+				slug
 				title
 				author
 				date
+				firstLetter
 			}
 		}
 	}

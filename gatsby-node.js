@@ -7,13 +7,12 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
 	// Query for markdown nodes to use in creating pages.
 	const result = await graphql(
-		`
-			{
+		`{
 				allMarkdownRemark(limit: 1000) {
 					edges {
 						node {
 							frontmatter {
-								path
+								slug
 							}
 						}
 					}
@@ -31,14 +30,14 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 	// Create pages for each markdown file.
 	const blogPostTemplate = path.resolve(`src/templates/blogPost.js`)
 	result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-		const { path } = node.frontmatter
+		const { slug } = node.frontmatter
 		createPage({
-			path,
+			path: slug,
 			component: blogPostTemplate,
 			// In your blog post template's graphql query, you can use path
 			// as a GraphQL variable to query for data from the markdown file.
 			context: {
-				path,
+				slug,
 			},
 		})
 	})
@@ -55,7 +54,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 				skip: i * postsPerPage,
 				numPages,
 				currentPage: i + 1,
-				prevPagePath: i <= 1 ? '/blog' : `/blog/${i - 2}`,
+				prevPagePath: i <= 1 ? '/blog' : `/blog/${i}`,
 				nextPagePath: `/blog/${i + 2}`,
 				hasPrevPage: i !== 0,
 				hasNextPage: i !== numPages - 1,

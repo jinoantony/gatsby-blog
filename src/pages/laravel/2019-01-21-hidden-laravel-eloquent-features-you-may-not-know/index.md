@@ -1,8 +1,9 @@
 ---
-path: '/blog/hidden-laravel-eloquent-features-you-may-not-know'
+slug: '/blog/hidden-laravel-eloquent-features-you-may-not-know'
 date: '2019-01-21'
 title: '10 Hidden Laravel Eloquent Features You May Not Know'
 author: 'Jino Antony'
+category: 'Laravel'
 tag: 'Laravel'
 description: 'Laravel is a feature-rich framework. However, you cannot find all the available features in the official documentation. Here are some features that you may not know.'
 ---

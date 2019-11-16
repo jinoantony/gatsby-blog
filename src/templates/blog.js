@@ -36,7 +36,7 @@ export const pageQuery = graphql`
 				node {
 					id
 					frontmatter {
-						path
+						slug
 						title
 						author
 						date
