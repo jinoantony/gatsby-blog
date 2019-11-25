@@ -1,6 +1,6 @@
 module.exports = {
 	defaultTitle: 'Jino Antony',
-	logo: 'https://portfolio.smakosh.com/favicon/favicon-512.png',
+	logo: 'static/favicon/favicon.ico',
 	author: 'Jino Antony',
 	url: 'https://jinoantony.com',
 	legalName: 'Jino Antony',
@@ -12,7 +12,7 @@ module.exports = {
 		linkedin: 'https://www.linkedin.com/in/jinoantony/',
 		instagram: 'https://instagram.com/jinoantony17'
 	},
-	googleAnalyticsID: 'UA-88875900-4',
+	googleAnalyticsID: 'UA-153176803-1',
 	themeColor: '#6b63ff',
 	backgroundColor: '#6b63ff',
 	social: {
@@ -29,5 +29,5 @@ module.exports = {
 		email: 'jinoantony99@gmail.com',
 		phone: '+91-9747989462',
 	},
-	foundingDate: '2018'
+	foundingDate: '2019'
 }

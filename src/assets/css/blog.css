@@ -81,7 +81,7 @@ p.excerpt {
   overflow: hidden;
 }
 
-a.author {
+p.author {
   font: 300 17px/28px Oxygen, Arial, Sans-Serif;
   box-sizing: border-box;
   background-color: transparent;

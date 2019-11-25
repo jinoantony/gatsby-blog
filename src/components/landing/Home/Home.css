@@ -8,6 +8,7 @@
 .box {
   text-align: center;
   padding: 10%;
+  padding-bottom: 0px;
 }
 
 .box h4 {

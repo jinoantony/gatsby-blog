@@ -15,9 +15,9 @@ const Article = props => (
 			<p className="excerpt">
 				{props.description}
 			</p>
-			<a href="https://ahmadawais.com/author/ahmad-awais/" className="author">
+			<p className="author">
 				Jino Antony
-			</a>
+			</p>
 		</div>
 	</article>
 )
