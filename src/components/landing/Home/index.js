@@ -15,7 +15,7 @@ const Home = () => (
     </p>
 
     <p>
-      Find me on <a href="https://twitter.com/Jino_Antony17">Twitter</a>
+      You can find me on
     </p>
     <SocialLinks/>
   </div>
