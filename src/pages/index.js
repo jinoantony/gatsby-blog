@@ -9,9 +9,5 @@ export default () => (
 		<SEO />
 		<Header/>
 		<Home />
-		{/* <Intro />
-		<Projects />
-		<Skills />
-		<Contact /> */}
 	</Layout>
 )
