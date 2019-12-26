@@ -1,6 +1,7 @@
 ---
 slug: '/blog/multi-user-api-authentication-using-laravel-jwt'
 date: '2019-01-15'
+draft: false
 title: 'Multi-User API Authentication Using Laravel JWT'
 author: 'Jino Antony'
 category: 'Laravel'

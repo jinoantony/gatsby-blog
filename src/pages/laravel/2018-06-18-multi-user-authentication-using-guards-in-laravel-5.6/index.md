@@ -1,6 +1,7 @@
 ---
 slug: '/blog/multi-user-authentication-using-guards-in-laravel-5.6'
 date: '2018-06-18'
+draft: false
 title: 'Multi-user Authentication Using Guards in Laravel 5.6'
 author: 'Jino Antony'
 category: 'Laravel'

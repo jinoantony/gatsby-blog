@@ -8,17 +8,16 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 	// Query for markdown nodes to use in creating pages.
 	const result = await graphql(
 		`{
-				allMarkdownRemark(limit: 1000) {
-					edges {
-						node {
-							frontmatter {
-								slug
-							}
+			allMarkdownRemark(limit: 1000, filter: {frontmatter: {draft: {eq: false} }}) {
+				edges {
+					node {
+						frontmatter {
+							slug
 						}
 					}
 				}
 			}
-		`
+		}`
 	)
 
 	// Handle errors
