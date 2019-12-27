@@ -14,7 +14,7 @@ Arrow Functions aka Short Closures is a new feature available in PHP 7.4. The ne
 
 ## Syntax
 
-Ok, lets start by analysing the syntax for arrow function.
+Ok, let's start by analysing the syntax for arrow function.
 
 ```php
 fn($arg) => $arg
@@ -28,7 +28,7 @@ function ($arg) {
 }
 ```
 
-Yeah, the function just takes an argument and return it. So arrow function is a normal function with a special `fn` keyword and no return statement? Probably Not!
+Yeah, the function just takes an argument and returns it. So arrow function is a normal function with a special `fn` keyword and no return statement? Probably Not!
 
 ## Features
 
@@ -60,7 +60,7 @@ $capitalizedNames = array_map(function($name) {
 }, $validNames);
 // ['Alex', 'John', 'Michael']
 ```
-Now we canuse arrow functions to transform the above code.
+Now we can use arrow functions to transform the above code.
 
 ```php
 $names = ['alex', 'john', null, 'michael'];
