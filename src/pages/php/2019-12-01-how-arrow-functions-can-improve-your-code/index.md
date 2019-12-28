@@ -6,6 +6,7 @@ slug: "/blog/how-arrow-functions-can-improve-your-code"
 tag: "PHP"
 author: "Jino Antony"
 description: "Arrow Functions aka Short Closures is a new feature available in PHP 7.4. The new version of PHP comes with various new features, out of which arrow functions are the most awaited one. In this article I want to show you how arrow functions can improve your code."
+coverImage: "code.jpg"
 tags:
   - "Tag"
 ---
