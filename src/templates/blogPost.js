@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
-
+import Img from "gatsby-image"
 import { Layout, SEO } from 'Common'
 import { Header } from 'Theme'
 
@@ -9,10 +9,19 @@ import './style.css'
 export default function Template({ data }) {
 	const post = data.markdownRemark
 	const articleClass = "article-post" + (post.frontmatter.firstLetter == true ? ' first-capital' : '')
-	
+	let coverImage = null
+
+	console.log(post.frontmatter.coverImage)
+	if (post.frontmatter.coverImage) {
+		coverImage = post.frontmatter.coverImage.childImageSharp.fluid
+	}
+
 	return (
 		<Layout>
-			<SEO title={post.frontmatter.title} />
+			<SEO 
+				title={post.frontmatter.title} 
+				thumbImage={coverImage ? coverImage.src : undefined}
+			/>
 			<Header />
 
 			<div
@@ -46,6 +55,11 @@ export default function Template({ data }) {
 			<div className="container pt-4 pb-4" style={{ maxWidth: '760px' }}>
 				<div className="row justify-content-center">
 					<div className="col-md-8 col-lg-12">
+						{coverImage && <Img 
+							fluid={coverImage} 
+							alt={post.frontmatter.title}
+							style={{'marginBottom': '20px'}}
+						/>}
 						<article
 							className={articleClass}
 							dangerouslySetInnerHTML={{ __html: post.html }}
@@ -67,6 +81,13 @@ export const postQuery = graphql`
 				author
 				date
 				firstLetter
+				coverImage {
+					childImageSharp {
+						fluid(maxWidth: 800) {
+							...GatsbyImageSharpFluid
+						}
+					}
+				}
 			}
 		}
 	}
