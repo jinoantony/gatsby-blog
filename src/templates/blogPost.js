@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 import Img from "gatsby-image"
-import { Layout, SEO } from 'Common'
+import { Layout, SEO } from '../components/common'
 import { Header } from 'Theme'
 
 import './style.css'
@@ -20,6 +20,7 @@ export default function Template({ data }) {
 			<SEO 
 				title={post.frontmatter.title} 
 				location={post.frontmatter.slug}
+				description={post.frontmatter.description}
 				thumbImage={coverImage ? coverImage.src : undefined}
 			/>
 			<Header />
@@ -81,6 +82,7 @@ export const postQuery = graphql`
 				author
 				date
 				firstLetter
+				description
 				coverImage {
 					childImageSharp {
 						fluid(maxWidth: 800) {
