@@ -11,7 +11,6 @@ export default function Template({ data }) {
 	const articleClass = "article-post" + (post.frontmatter.firstLetter == true ? ' first-capital' : '')
 	let coverImage = null
 
-	console.log(post.frontmatter.coverImage)
 	if (post.frontmatter.coverImage) {
 		coverImage = post.frontmatter.coverImage.childImageSharp.fluid
 	}
@@ -20,6 +19,7 @@ export default function Template({ data }) {
 		<Layout>
 			<SEO 
 				title={post.frontmatter.title} 
+				location={post.frontmatter.slug}
 				thumbImage={coverImage ? coverImage.src : undefined}
 			/>
 			<Header />
