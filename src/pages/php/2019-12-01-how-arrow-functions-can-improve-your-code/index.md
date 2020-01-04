@@ -21,7 +21,7 @@ Ok, let's start by analysing the syntax for arrow function.
 fn($arg) => $arg
 ```
 
-Looks a bit weird. But it's pretty awesome once you get over it. To understand what the above code does, we can take a look at it's equivalent normal function.
+Looks a bit weird. But it's pretty awesome once you get over it. To understand what the above code does, we can take a look at its equivalent normal function.
 
 ```php
 function ($arg) {
@@ -40,7 +40,7 @@ These are some notable features of arrow functions.
 - No `return` keyword.
 - They inherit outer scope.
 
-Arrow functions are quite known in the JS community. However short closures in PHP is not same as arrow functions in JS. As the name suggests short closures are intended to use as simple [Closures](https://www.php.net/manual/en/class.closure.php) and they are not a replacement for normal functions.
+Arrow functions are quite known in the JS community. However short closures in PHP is not the same as arrow functions in JS. As the name suggests short closures are intended to use as simple [Closures](https://www.php.net/manual/en/class.closure.php) and they are not a replacement for normal functions.
 
 So let's look into how short closures can improve your code.
 
