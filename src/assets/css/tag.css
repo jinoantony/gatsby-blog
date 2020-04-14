@@ -1,0 +1,17 @@
+:root {
+    --php-color: #635CFF;
+    --laravel-color: #ff2d20;
+    --javascript-color: #ffab00;
+}
+
+a.php {
+    background-color: var(--php-color);
+}
+
+a.laravel {
+    background-color: var(--laravel-color);
+}
+
+a.javascript {
+    background-color: var(--javascript-color);
+}

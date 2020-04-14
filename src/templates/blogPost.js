@@ -31,7 +31,7 @@ export default function Template({ data }) {
 			>
 				<div className="h-100 tofront">
 					<div className="row">
-						<div className="col-md-12 pt-3 pb-10 pr-6">
+						<div className="col-md-12 pt-3 pb-10">
 							<p className="text-uppercase font-weight-bold" />
 							<h1 className="display-10 secondfont mb-3 font-weight-bold post-title">
 								{post.frontmatter.title}
@@ -59,6 +59,7 @@ export default function Template({ data }) {
 						{coverImage && <Img 
 							fluid={coverImage} 
 							alt={post.frontmatter.title}
+							title={post.frontmatter.coverImageTitle || post.frontmatter.title}
 							style={{'marginBottom': '20px'}}
 						/>}
 						<article
@@ -90,6 +91,7 @@ export const postQuery = graphql`
 						}
 					}
 				}
+				coverImageTitle
 			}
 		}
 	}

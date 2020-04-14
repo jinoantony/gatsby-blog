@@ -1,9 +1,10 @@
 import React from 'react'
+import '../assets/css/tag.css'
 
 const ArticleMeta = props => (
 	<ul className="meta">
 		<li className="category">
-			<a style={{ background: '#635CFF' }} href="#">
+			<a className={props.tag.toLowerCase()} href="#">
 				{props.tag}
 			</a>
 		</li>
