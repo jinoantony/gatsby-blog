@@ -1,5 +1,6 @@
 import React from 'react'
 import '../assets/css/tag.css'
+import { Link } from 'gatsby'
 
 const ArticleMeta = props => (
 	<ul className="meta">
@@ -12,9 +13,9 @@ const ArticleMeta = props => (
 			<i className="fa fa-thumb-tack" />
 		</li>
 		<li className="readtime">
-			<a className="time" href={props.link}>
+			<Link className="time" to={props.link}>
 				{props.readTime}
-			</a>
+			</Link>
 		</li>
 	</ul>
 )

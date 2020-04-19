@@ -1,5 +1,6 @@
 import React from 'react'
 import ArticleMeta from './ArticleMeta'
+import { Link } from 'gatsby'
 
 const Article = props => (
 	<article className="postitem">
@@ -10,7 +11,7 @@ const Article = props => (
 				readTime={props.readTime}
 			/>
 			<h2 className="title">
-				<a href={props.link}>{props.title}</a>
+				<Link to={props.link}>{props.title}</Link>
 			</h2>
 			<p className="excerpt">
 				{props.description}
