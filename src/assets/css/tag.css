@@ -1,7 +1,8 @@
 :root {
     --php-color: #635CFF;
     --laravel-color: #ff2d20;
-    --javascript-color: #ffab00;
+    --javascript-color: #f1662f;
+    --link-color: #f1362f;
 }
 
 a.php {

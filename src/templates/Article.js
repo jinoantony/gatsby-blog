@@ -16,9 +16,9 @@ const Article = props => (
 			<p className="excerpt">
 				{props.description}
 			</p>
-			<p className="author">
+			{/* <p className="author">
 				Jino Antony
-			</p>
+			</p> */}
 		</div>
 	</article>
 )

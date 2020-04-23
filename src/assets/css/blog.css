@@ -7,13 +7,16 @@
   padding: 40px 0 20px 0;
 }
 
-.wrapper {
+.wrapper{
   font: 300 17px/28px Oxygen, Arial, Sans-Serif;
   box-sizing: border-box;
   max-width: 700px;
   width: 90%;
   padding: 20px 0;
   margin: 0 auto;
+}
+
+.articles-list article:not(:last-child) .wrapper{
   border-bottom: 1px solid #afafaf;
 }
 
@@ -69,7 +72,7 @@ h2.title {
 }
 
 .postitem h2 a:hover {
-  color: #f1362f;
+  color: #f1362fcf;
 }
 
 p.excerpt {
@@ -153,6 +156,7 @@ li.readtime {
 
 ul li.readtime a {
   font-family: Montserrat, Arial, Sans-Serif;
+  text-decoration: none;
 }
 
 @media (max-width: 480px){

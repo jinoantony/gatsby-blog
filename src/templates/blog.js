@@ -14,6 +14,7 @@ const Blog = ({ data, pageContext }) => (
 		<SEO title="Jino Antony | Blog" />
 		<Header />
 		<BlogList posts={data.allMarkdownRemark.edges} />
+		<hr/>
 		<Paginator 
 			pages={pageContext.numPages} 
 			currentPage={pageContext.currentPage}

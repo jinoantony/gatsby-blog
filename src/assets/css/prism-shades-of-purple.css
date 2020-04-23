@@ -201,3 +201,8 @@
  code.language-shell, pre.language-shell {
      color: #fbb500;
  }
+
+.article-post code.language-text {
+    background-color: #e8e8e8;
+    color: black;
+}
