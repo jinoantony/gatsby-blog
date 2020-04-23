@@ -3,7 +3,7 @@ import { Container } from 'Common'
 import { Wrapper, Flex, Links, Details } from './styles'
 import social from './social.json'
 
-export const Footer = () => (
+export const Footerr = () => (
 	<Wrapper>
 		<Flex as={Container}>
 			<Details>

@@ -6,22 +6,20 @@ import { Header } from '../components/theme/Header'
 import BlogList from './BlogList'
 
 import '../assets/css/blog.css'
+import Paginator from './Paginator'
+import Footer from '../components/theme/Footer'
 
 const Blog = ({ data, pageContext }) => (
 	<Layout>
 		<SEO title="Jino Antony | Blog" />
 		<Header />
 		<BlogList posts={data.allMarkdownRemark.edges} />
-		<div className= "navigator">
-			{pageContext.hasPrevPage && (
-				<Link className= "previous" to={pageContext.prevPagePath}>{'<< Previous'}</Link>
-			)}
-			{pageContext.hasNextPage && (
-				<Link className= "next" to={pageContext.nextPagePath} style={{ float: 'right' }}>
-					Next >>
-				</Link>
-			)}
-		</div>
+		<Paginator 
+			pages={pageContext.numPages} 
+			currentPage={pageContext.currentPage}
+			maxLength={pageContext.maxLength} 
+		/>
+		<Footer/>
 	</Layout>
 )
 
@@ -56,3 +54,4 @@ export const pageQuery = graphql`
 `
 
 export default Blog
+

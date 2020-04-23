@@ -23,7 +23,6 @@
   margin: 0 auto;
   padding: 20px 0;
   max-width: 700px;
-  margin-bottom: 10%;
 }
 
 .navigator .previous {
@@ -67,6 +66,10 @@ h2.title {
   border-color 0.15s ease-in;
   display: block;
   color: #373737;
+}
+
+.postitem h2 a:hover {
+  color: #f1362f;
 }
 
 p.excerpt {

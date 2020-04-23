@@ -6,6 +6,7 @@ module.exports = {
 	legalName: 'Jino Antony',
 	defaultDescription: 'Hello, I am Jino Antony, a backend developer based in Kerala, India. I\'m mostly experienced in PHP, Javascript and other web related technologies',
 	postsPerPage: 5,
+	paginationMaxLength: 7,
 	socialLinks: {
 		twitter: 'http://www.twitter.com/JinoAntony_17',
 		github: 'https://github.com/jinoantony',

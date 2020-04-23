@@ -1,0 +1,31 @@
+ul.paginator li.paginator-link a {
+    border: 2px solid #dcd9d9;
+    border-radius: 50%;
+    transition: border-color 200ms ease-in-out;
+    cursor: pointer;
+    width: 42px;
+    height: 42px;
+    text-align: center;
+    line-height: 39px;
+    display: block;
+}
+
+ul.paginator li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+ul.paginator li.paginator-link a:hover {
+    border-color: #8e8b8b;
+    color: #f1362f;
+}
+
+ul.paginator {
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul.paginator li.paginator-link a {
+    text-decoration: none;
+    color: #7d7c7c;
+}

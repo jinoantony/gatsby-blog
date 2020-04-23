@@ -5,6 +5,7 @@ import { Layout, SEO } from '../components/common'
 import { Header } from 'Theme'
 
 import './style.css'
+import Footer from '../components/theme/Footer'
 
 export default function Template({ data }) {
 	const post = data.markdownRemark
@@ -69,6 +70,7 @@ export default function Template({ data }) {
 					</div>
 				</div>
 			</div>
+			<Footer/>
 		</Layout>
 	)
 }

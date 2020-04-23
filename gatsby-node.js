@@ -42,7 +42,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 	})
 
 	const posts = result.data.allMarkdownRemark.edges
-	const { postsPerPage } = siteConfig
+	const { postsPerPage, paginationMaxLength } = siteConfig
 	const numPages = Math.ceil(posts.length / postsPerPage)
 	Array.from({ length: numPages }).forEach((_, i) => {
 		createPage({
@@ -52,6 +52,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 				limit: postsPerPage,
 				skip: i * postsPerPage,
 				numPages,
+				maxLength: paginationMaxLength,
 				currentPage: i + 1,
 				prevPagePath: i <= 1 ? '/blog' : `/blog/${i}`,
 				nextPagePath: `/blog/${i + 2}`,
