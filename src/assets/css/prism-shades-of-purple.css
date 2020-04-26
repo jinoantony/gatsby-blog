@@ -28,7 +28,7 @@
      font-size: 17px;
      line-height: 25px;
      letter-spacing: 0.5px;
-     text-shadow: 0 1px #222245;
+     /* text-shadow: 0 1px #222245; */
  }
  
  pre[class*='language-']::-moz-selection,

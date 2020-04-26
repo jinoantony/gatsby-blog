@@ -9,6 +9,7 @@ const Article = props => (
 				link={props.link}
 				tag={props.tag}
 				readTime={props.readTime}
+				date={props.date}
 			/>
 			<h2 className="title">
 				<Link to={props.link}>{props.title}</Link>

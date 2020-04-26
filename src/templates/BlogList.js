@@ -7,6 +7,7 @@ const BlogList = props =>
 	<div className="articles-list">
 		{props.posts.map(post => (
 			<Article
+				date={post.node.frontmatter.date}
 				link={post.node.frontmatter.slug}
 				tag={post.node.frontmatter.tag}
 				readTime={post.node.fields.readingTime.text}

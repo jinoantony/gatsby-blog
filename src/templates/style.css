@@ -13546,3 +13546,8 @@ h1.post-title {
 .navbar-links a:hover::after {
   width: 100%;
 }
+
+figcaption {
+  text-align: center;
+  color: rgb(156, 156, 156);
+}
