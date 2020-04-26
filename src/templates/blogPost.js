@@ -6,6 +6,7 @@ import { Header } from 'Theme'
 
 import './style.css'
 import Footer from '../components/theme/Footer'
+import CustomImg from './CustomImg'
 
 export default function Template({ data }) {
 	const post = data.markdownRemark
@@ -57,11 +58,12 @@ export default function Template({ data }) {
 			<div className="container pt-4 pb-4" style={{ maxWidth: '760px' }}>
 				<div className="row justify-content-center">
 					<div className="col-md-8 col-lg-12">
-						{coverImage && <Img 
+						{coverImage && <CustomImg 
 							fluid={coverImage} 
 							alt={post.frontmatter.title}
-							title={post.frontmatter.coverImageTitle || post.frontmatter.title}
-							style={{'marginBottom': '20px'}}
+							title={post.frontmatter.title}
+							style={{'marginBottom': '7px'}}
+							caption={post.frontmatter.coverImageTitle}
 						/>}
 						<article
 							className={articleClass}
