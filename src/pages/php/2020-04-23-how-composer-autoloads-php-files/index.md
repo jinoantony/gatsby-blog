@@ -1,6 +1,6 @@
 ---
 title: How Composer Autoloads PHP Files
-date: '2020-04-23'
+date: '2020-04-26'
 draft: false
 slug: /blog/how-composer-autoloads-php-files
 tag: PHP
@@ -60,7 +60,7 @@ Composer supports the following types of autoloading.
 3. PSR-4
 4. Files
 
-Autoloading types and it's rule can be defined in the `composer.json` file. You can configure multiple types of autoloading in a single application.
+Autoloading types and its rule can be defined in the `composer.json` file. You can configure multiple types of autoloading in a single application. Among these [PSR-4](https://www.php-fig.org/psr/psr-4/) and [PSR-0](https://www.php-fig.org/psr/psr-0/) are the autoloading standards proposed by the [PHP-FIG](https://www.php-fig.org/) Group.
 
 ### Classmap
 
@@ -78,7 +78,7 @@ The mapping is done by scanning for all classes inside `.php` and `.inc` files i
 
 ### PSR-0
 
-This is the PSR standard for autoloading files prior to PSR-4 and it is now Deprecated. You can define the PSR-0 rules in the config file as a mapping from namespace to paths, relative to the package/application root.
+This is the PSR standard for autoloading files before PSR-4 and it is now **Deprecated**. You can define the PSR-0 rules in the config file as a mapping from namespace to paths, relative to the package/application root.
 
 ```json
 {
@@ -92,7 +92,7 @@ This is the PSR standard for autoloading files prior to PSR-4 and it is now Depr
 }
 ```
 
-All PSR-0 references are combined into a single key => value array, which can be found in the generated file`vendor/composer/autoload_namespaces.php`. During autoloading PSR-0 looks for the namespace in the generated array and find resolve the path from its value.
+All PSR-0 references are combined into a single key => value array, which can be found in the generated file`vendor/composer/autoload_namespaces.php`. During autoloading PSR-0 looks for the namespace in the generated array and resolves the path from its value.
 
 For example, `Acme\Foo\Bar` would resolve to `src/Acme/Foo/Bar.php`. PSR-0 also supports underscores(`_`) in class names. Each `_` character in the class name is converted to a `DIRECTORY_SEPARATOR`. So that `Acme_Foo_Bar` would also be resolved to `src/Acme/Foo/Bar.php`.
 
@@ -111,7 +111,7 @@ PSR-4 is currently the recommended way of autoloading since it offers greater ea
 }
 ```
 
-Unlike PSR-0 underscores will not be converted to `DIRECTORY_SEPARATOR` and the namespace prefix is not present in the path.
+Unlike PSR-0 underscores **will not** be converted to `DIRECTORY_SEPARATOR` and the namespace prefix is not present in the path.
 
 For example, `Acme\Foo\Bar` would resolve to `src/Bar.php`.
 
@@ -131,7 +131,7 @@ Classmap, PSR-0, and PSR-4 deal with classes only. If you want to autoload funct
 
 ## Note on Classmap and PSR-4
 
-Classmap autoloading is the fastest among autoloaders, since it loads classes from the prebuilt array. But the problem with classmap is that you need to regenerate the classmap array every time you create a new class file. So in the development environment PSR-4 autoloading will be the most suited one.
+Classmap autoloading is the fastest among autoloaders since it loads classes from the prebuilt array. But the problem with classmap is that you need to regenerate the classmap array every time you create a new class file. So in the development environment PSR-4 autoloading will be the most suited one.
 
 PSR-4 autoloading will be slower compared to classmap because, it needs to check the filesystem before resolving a classname conclusively. But in production you want things to be as fast as possible.
 
@@ -145,13 +145,13 @@ Classmap generation can be enabled in any of the following ways.
 
 ## Putting it all together
 
-Now we can look into how composer autoloads our files combining all these autoloaders. First of all we need to include composer's `autoload.php` file.
+Now we can look into how composer autoloads our files combining all these autoloaders. First of all, we need to include composer's `autoload.php` file.
 
 ```php
 require __DIR__.'/../vendor/autoload.php';
 ```
 
-It require another file `composer/autoload_real.php` and call the `getLoader()` method on the generated composer autoloader class.
+It requires another file `composer/autoload_real.php` and calls the `getLoader()` method on the generated composer autoloader class.
 
 ```php
 require_once __DIR__ . '/composer/autoload_real.php';
@@ -199,10 +199,10 @@ public function loadClass($class)
 }
 ```
 
-The `findFile()` method is responsible for finding the file path. Since its implementation is a little bit complex, we won't discuss it here. But all you need to know is that it check for file path lookup in the following way
+The `findFile()` method is responsible for finding the file path. Since its implementation is a little bit complex, we won't discuss it here. But all you need to know is that it checks for file path lookup in the following way.
 
 1. Check if classmap contains the specified class if found return immediately with the file path.
 2. If the file is not found in classmap, psr-4 lookup is made, if found return with the generated file path.
 3. If the psr-4 lookup is not successful, psr-0 lookup is made, if found return with the generated file path.
 
-That's it. Composer does a good job of autoloading your files and provides you with a variety of options to configure them.
+That's it. Composer does a good job of autoloading your files and provides you with a variety of options to configure them and make development a breeze.
