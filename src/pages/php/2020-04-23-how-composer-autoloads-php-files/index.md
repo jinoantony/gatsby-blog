@@ -23,7 +23,7 @@ Autoloading means the automatic loading of the files required for your project/a
 
 ## Why do we need it?
 
-Including files using `include()` or `require()` will be ok if your project contains less than 10 files. But most of the real-world applications contains a huge no. of files. So including files using the above-mentioned functions will become a tedious task. It will become even more difficult if our project depends on a lot of external libraries/packages.
+Including files using `include()` or `require()` will be ok if your project contains less no. of files. But most of the real-world applications contain a huge no. of files. So including files using the above-mentioned functions will become a tedious task. It will become even more difficult if our project depends on a lot of external libraries/packages.
 
 So we need an easy way of loading files. Autoloading can help us here. 
 

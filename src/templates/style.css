@@ -12636,7 +12636,7 @@ article iframed,
 article embed {
   margin-bottom: 2rem;
 }
-article blockquote {
+article.article-post blockquote {
   padding-left: 40px;
   margin-left: 0px;
   font-style: italic;
