@@ -174,7 +174,7 @@ public static function getLoader()
 }
 ```
 
-The `register()` method in `ClassLoader` class register the autload function `loadClass()`.
+The `register()` method in `ClassLoader` class register the autoload function `loadClass()`.
 
 ```php
 class ClassLoader

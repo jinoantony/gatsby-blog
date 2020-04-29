@@ -7,6 +7,7 @@ import { Header } from 'Theme'
 import './style.css'
 import Footer from '../components/theme/Footer'
 import CustomImg from './CustomImg'
+import ScrollToTop from '../components/common/ScrollToTop'
 
 export default function Template({ data }) {
 	const post = data.markdownRemark
@@ -26,6 +27,7 @@ export default function Template({ data }) {
 				thumbImage={coverImage ? coverImage.src : undefined}
 			/>
 			<Header />
+			<ScrollToTop />
 
 			<div
 				className="container mb-10"
