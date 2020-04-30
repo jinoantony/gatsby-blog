@@ -8,5 +8,9 @@ export const Wrapper = styled.div`
 
 	a {
 		color: #212121;
+		text-decoration: none;
+		&:focus, &:hover, &:visited, &:link, &:active {
+        	text-decoration: none;
+    	}
 	}
 `

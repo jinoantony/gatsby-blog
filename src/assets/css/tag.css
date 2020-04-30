@@ -5,6 +5,13 @@
     --link-color: #f1362f;
 }
 
+body.dark {
+    --php-color: #bb86fc;
+    --laravel-color: #cf6679;
+    --javascript-color: #fc8e62;
+    --link-color: #f1362f;
+}
+
 a.php {
     background-color: var(--php-color);
 }
@@ -15,4 +22,8 @@ a.laravel {
 
 a.javascript {
     background-color: var(--javascript-color);
+}
+
+.dark li.category a {
+    color: black;
 }

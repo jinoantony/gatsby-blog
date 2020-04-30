@@ -13,6 +13,15 @@ module.exports = {
 	},
 	plugins: [
 		'gatsby-plugin-react-helmet',
+		{
+			resolve: 'gatsby-plugin-use-dark-mode',
+			options: {
+				classNameDark: 'dark',
+				classNameLight: 'light',
+				storageKey: 'darkMode',
+				minify: true,
+			},
+		},
 		'gatsby-plugin-styled-components',
 		{
 			resolve: 'gatsby-source-filesystem',
