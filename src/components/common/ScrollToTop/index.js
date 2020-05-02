@@ -11,7 +11,7 @@ const ScrollToTop = props => {
     let pageHeight = document.body.scrollHeight
     let scrollPercentage = (scrollTop / pageHeight) * 100
 
-    setOpacity(scrollPercentage > 30 ? 1 : 0)
+    setOpacity(scrollPercentage > 10 ? 1 : 0)
   }
 
   useEffect(() => {
@@ -31,6 +31,7 @@ const ScrollButton = styled.button`
   height: 50px;
   font-family: monospace;
   color: #000000cc;
+  background-color: white;
   cursor: pointer;
   font-size: 38px;
   z-index: 1000;
@@ -42,13 +43,16 @@ const ScrollButton = styled.button`
   :active {
     border-color: rgba(84, 84, 84, 0.94);
   }
-  :after {
+  ::after {
     content: '^';
     font-family: monospace;
     position: absolute;
     top: 3px;
     text-align: center;
     left: 13px;
+    @media (max-width: 960px) {
+      font-family: 'Cabin', sans-serif;
+    }
   }
 `
 

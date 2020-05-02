@@ -7,7 +7,7 @@
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
 
-@import url('https://fonts.googleapis.com/css?family=Noticia+Text|Noto+Serif:400,700&&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noticia+Text|Noto+Serif:400,700|Cabin&display=swap');
 
 *,
 *::before,
@@ -13609,4 +13609,11 @@ body.dark {
 
 .dark :not(pre) > code[class*='language-'], .dark pre[class*='language-'] {
   background: #2b2b2bde;
+}
+
+.article-post code.language-text {
+  white-space: break-spaces;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-all;
 }
