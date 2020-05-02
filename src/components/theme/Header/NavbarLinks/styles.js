@@ -10,7 +10,7 @@ export const Wrapper = styled.div`
 		desktop
 			? `
 			@media (max-width: 960px) {
-					display: none;
+				margin: 0 auto;
 			}
 
 			a {

@@ -171,3 +171,15 @@ ul li.readtime a {
 @media (max-width: 768px), (min-width: 991px) {
   .jXLsQo { padding: 4rem 0 4rem }
 }
+
+.dark .postitem h2 a {
+  color: #8e8e8e;
+}
+
+.dark p.excerpt {
+  color: #848282;
+}
+
+.dark hr.blog-hr {
+  background-color: #5a5959;
+}
