@@ -1,0 +1,31 @@
+#my-logo {
+  width: 40px;
+  margin-bottom: 0px;
+}
+
+#home-link {
+  margin-left: 5px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container:hover svg path:not(#outer-circle) {
+    fill: #f1362f;
+    stroke: #f1362f;
+}
+
+.logo-container:hover svg path#outer-circle {
+    stroke: #f1362f;
+}
+
+body.dark .logo-container svg path:not(#outer-circle) {
+    fill: white;
+    stroke: white;
+}
+
+body.dark .logo-container svg path#outer-circle {
+    stroke: white;
+}

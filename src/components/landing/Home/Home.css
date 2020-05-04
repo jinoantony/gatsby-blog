@@ -1,22 +1,161 @@
 .box img {
-  width: 160px;
-  height: 160px;
+  width: 35vw;
+  height: 35vw;
+  max-width: 160px;
+  max-height: 160px;
   object-fit: cover;
   border-radius: 50%;
+  display: inline-block;
 }
 
 .box {
-  text-align: center;
-  padding: 10%;
-  padding-bottom: 10vh;
+  /* text-align: center; */
+  /* padding: 10%; */
+  padding-bottom: 2vh;
+  max-width: 760px;
+  margin: 0 auto;
 }
 
 .box h4 {
   color: grey;
 }
 
-.box p {
-  font-size: 20px;
-  color: #8f8f8f;
-  font-family: 'Montserrat', sans-serif;
+.dark .box h1 {
+  color: #d0d0d0;
+}
+
+.box p.about {
+  font-size: 1.3rem;
+  color: #5c5959;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Roboto Slab', serif;
+  text-align: left;
+}
+
+.dark .box p.about {
+  color: #8f8c8c;
+}
+
+.my-info,
+.my-image {
+  display: flex;
+}
+
+.my-info .intro {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 9px;
+}
+
+.intro h4 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+  padding-top: 30px;
+  color: #aaa;
+}
+
+.intro h1 {
+  font-size: 4rem;
+  color: #5e5b5b;
+}
+
+.my-info .my-image {
+  flex-shrink: 0;
+}
+
+.box .latest-articles h3 {
+  color: #5c5959;
+}
+
+.box .latest-articles a {
+  color: #5c5959;
+  text-decoration: none;
+}
+
+.box .latest-articles a:hover {
+  color: rgb(244, 100, 95);;
+}
+
+.latest-articles ul li a {
+  font-family: 'Roboto Slab';
+  font-size: 1.1rem;
+}
+
+.read-more {
+  margin-left: 12px;
+  font-family: 'Roboto Slab';
+}
+
+body.dark .latest-articles h3 {
+  color: #c1c1c1;
+}
+
+body.dark .latest-articles a {
+  color: #9c9d9e;
+}
+
+body.dark .read-more, body.dark .latest-articles a:hover {
+  color: var(--laravel-color)
+}
+
+@media only screen and (max-width: 600px) {
+  .intro h1 {
+    font-size: 2rem;
+  }
+
+  .intro h4 {
+    font-size: 1rem;
+    padding-top: 0px;
+  }
+
+  .my-info {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .my-image {
+    justify-content: center;
+  }
+
+  .my-info .intro {
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .box p.about {
+    font-size: 1.2rem;
+    /* color: #686666; */
+    /* font-family: Roboto; */
+    text-align: left;
+  }
+
+  .box .content {
+    padding: 0px 15px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+  .intro h1 {
+    font-size: 3rem;
+  }
+
+  .intro h4 {
+    font-size: 1.5rem;
+    padding-top: 0px;
+  }
+
+  .my-image {
+    width: 30%;
+    flex-direction: row-reverse;
+  }
+
+  .box p.about {
+    font-size: 1.25rem;
+  }
+
+  .box .content {
+    padding: 0px 15px;
+  }
 }
