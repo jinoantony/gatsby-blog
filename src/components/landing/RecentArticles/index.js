@@ -8,8 +8,8 @@ const RecentArticles = () => {
         <div className="latest-articles">
             <h3>Latest Articles</h3>
             <ul>
-                {data.allMarkdownRemark.edges.map(article => (
-                    <li>
+                {data.allMarkdownRemark.edges.map((article, index) => (
+                    <li key={index}>
                         <Link to={article.node.frontmatter.slug}>
                             { article.node.frontmatter.title }
                         </Link>

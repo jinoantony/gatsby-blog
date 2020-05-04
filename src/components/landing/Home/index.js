@@ -23,7 +23,7 @@ const Home = () => (
         web related technologies. I usually write articles related to web development.
       </p>
       <RecentArticles/>
-      <Link to="/blog">Read More</Link>
+      <Link to="/blog" className="read-more">Read More</Link>
     </div>
     {/* <p>You can find me on</p>
     <SocialLinks /> */}

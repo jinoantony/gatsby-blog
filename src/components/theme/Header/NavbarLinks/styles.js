@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
 	${({ desktop }) =>
 		desktop
 			? `
-			@media (max-width: 960px) {
+			@media (max-width: 600px) {
 				margin: 0 auto;
 			}
 
