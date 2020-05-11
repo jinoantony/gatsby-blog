@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
+import up from '../../../assets/images/up-icon.svg'
 
 const scrollToTop = () => window.scroll({ top: 0, left: 0, behavior: 'smooth' })
 
@@ -44,15 +45,15 @@ const ScrollButton = styled.button`
     border-color: rgba(84, 84, 84, 0.94);
   }
   ::after {
-    content: '^';
-    font-family: monospace;
+    content: '';
+    background-image: url('${up}');
+    /* font-family: monospace; */
     position: absolute;
-    top: 3px;
+    top: 6px;
     text-align: center;
-    left: 13px;
-    @media (max-width: 960px) {
-      font-family: 'Cabin', sans-serif;
-    }
+    left: 7px;
+    width: 35px;
+    height: 35px;
   }
 `
 
