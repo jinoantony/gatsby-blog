@@ -57,10 +57,10 @@ h2.title {
 
 .postitem h2 a {
   /* font: 300 17px/28px Oxygen, Arial, Sans-Serif; */
-  font-size: 48px;
+  font-size: 2.6rem;
   font-weight: 400;
   line-height: 62px;
-  font-family: 'Noticia Text', serif;
+  font-family: 'Zilla Slab', serif;
   letter-spacing: -1px;
   box-sizing: border-box;
   background-color: transparent;
@@ -79,8 +79,8 @@ p.excerpt {
   font: 300 17px/28px Oxygen, Arial, Sans-Serif;
   box-sizing: border-box;
   margin: 40px 0;
-  font-family: 'Noto Serif', serif;
-  font-size: 19px;
+  font-family: 'Zilla Slab', serif;
+  font-size: 1.1rem;
   font-weight: 400;
   line-height: 35px;
   color: rgba(35, 37, 40, 0.7);

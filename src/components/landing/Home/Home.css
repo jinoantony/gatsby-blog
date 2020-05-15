@@ -25,7 +25,7 @@
 }
 
 .box p.about {
-  font-size: 1.3rem;
+  font-size: 1.08rem;
   color: #5c5959;
   /* font-family: 'Montserrat', sans-serif; */
   font-family: 'Roboto Slab', serif;
@@ -50,14 +50,14 @@
 }
 
 .intro h4 {
-  font-size: 2rem;
+  font-size: 1.6666667rem;
   margin-bottom: 5px;
   padding-top: 30px;
   color: #aaa;
 }
 
 .intro h1 {
-  font-size: 4rem;
+  font-size: 3.33333333rem;
   color: #5e5b5b;
 }
 
@@ -80,7 +80,7 @@
 
 .latest-articles ul li a {
   font-family: 'Roboto Slab';
-  font-size: 1.1rem;
+  font-size: 0.91rem;
 }
 
 .read-more {
@@ -102,11 +102,11 @@ body.dark .read-more, body.dark .latest-articles a:hover {
 
 @media only screen and (max-width: 600px) {
   .intro h1 {
-    font-size: 2rem;
+    font-size: 1.666666667rem;
   }
 
   .intro h4 {
-    font-size: 1rem;
+    font-size: 0.833333333rem;
     padding-top: 0px;
   }
 
@@ -125,7 +125,7 @@ body.dark .read-more, body.dark .latest-articles a:hover {
   }
 
   .box p.about {
-    font-size: 1.2rem;
+    font-size: 1rem;
     /* color: #686666; */
     /* font-family: Roboto; */
     text-align: left;
@@ -142,7 +142,7 @@ body.dark .read-more, body.dark .latest-articles a:hover {
   }
 
   .intro h4 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     padding-top: 0px;
   }
 
@@ -152,7 +152,7 @@ body.dark .read-more, body.dark .latest-articles a:hover {
   }
 
   .box p.about {
-    font-size: 1.25rem;
+    font-size: 1.04166667rem;
   }
 
   .box .content {

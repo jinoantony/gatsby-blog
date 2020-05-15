@@ -205,7 +205,7 @@ export const Global = createGlobalStyle`
       padding-left: 0;
       padding-right: 0;
       padding-top: 0;
-      margin-bottom: 1.45rem;
+      margin-bottom: 1.208333333rem;
     }
     h1 {
       margin-left: 0;
@@ -215,11 +215,11 @@ export const Global = createGlobalStyle`
       padding-left: 0;
       padding-right: 0;
       padding-top: 0;
-      margin-bottom: 1.45rem;
+      margin-bottom: 1.208333333rem;
       color: inherit;
       font-weight: bold;
       text-rendering: optimizeLegibility;
-      font-size: 2.25rem;
+      font-size: 1.875rem;
       line-height: 1.1;
     }
     h2 {
@@ -230,11 +230,11 @@ export const Global = createGlobalStyle`
       padding-left: 0;
       padding-right: 0;
       padding-top: 0;
-      margin-bottom: 1.45rem;
+      margin-bottom: 1.208333333rem;
       color: inherit;
       font-weight: bold;
       text-rendering: optimizeLegibility;
-      font-size: 1.62671rem;
+      font-size: 1.35559167rem;
       line-height: 1.1;
     }
     h3 {
@@ -245,11 +245,11 @@ export const Global = createGlobalStyle`
       padding-left: 0;
       padding-right: 0;
       padding-top: 0;
-      margin-bottom: 1.45rem;
+      margin-bottom: 1.208333333rem;
       color: inherit;
       font-weight: bold;
       text-rendering: optimizeLegibility;
-      font-size: 1.38316rem;
+      font-size: 1.15rem;
       line-height: 1.1;
     }
     h4 {
@@ -260,11 +260,11 @@ export const Global = createGlobalStyle`
       padding-left: 0;
       padding-right: 0;
       padding-top: 0;
-      margin-bottom: 1.45rem;
+      margin-bottom: 1.208333333rem;
       color: inherit;
       font-weight: bold;
       text-rendering: optimizeLegibility;
-      font-size: 1rem;
+      font-size: 0.83333333rem;
       line-height: 1.1;
     }
     h5 {
@@ -275,11 +275,11 @@ export const Global = createGlobalStyle`
       padding-left: 0;
       padding-right: 0;
       padding-top: 0;
-      margin-bottom: 1.45rem;
+      margin-bottom: 1.208333333rem;
       color: inherit;
       font-weight: bold;
       text-rendering: optimizeLegibility;
-      font-size: 0.85028rem;
+      font-size: 0.708566667rem;
       line-height: 1.1;
     }
     h6 {
@@ -290,11 +290,11 @@ export const Global = createGlobalStyle`
       padding-left: 0;
       padding-right: 0;
       padding-top: 0;
-      margin-bottom: 1.45rem;
+      margin-bottom: 1.208333333rem;
       color: inherit;
       font-weight: bold;
       text-rendering: optimizeLegibility;
-      font-size: 0.78405rem;
+      font-size: 0.653375rem;
       line-height: 1.1;
     }
     hgroup {
@@ -305,29 +305,29 @@ export const Global = createGlobalStyle`
       padding-left: 0;
       padding-right: 0;
       padding-top: 0;
-      margin-bottom: 1.45rem;
+      margin-bottom: 1.208333333rem;
     }
     ul {
-      margin-left: 1.45rem;
+      margin-left: 1.208333333rem;
       margin-right: 0;
       margin-top: 0;
       padding-bottom: 0;
       padding-left: 0;
       padding-right: 0;
       padding-top: 0;
-      margin-bottom: 1.45rem;
+      margin-bottom: 1.208333333rem;
       list-style-position: outside;
       list-style-image: none;
     }
     ol {
-      margin-left: 1.45rem;
+      margin-left: 1.208333333rem;
       margin-right: 0;
       margin-top: 0;
       padding-bottom: 0;
       padding-left: 0;
       padding-right: 0;
       padding-top: 0;
-      margin-bottom: 1.45rem;
+      margin-bottom: 1.208333333rem;
       list-style-position: outside;
       list-style-image: none;
     }
@@ -339,7 +339,7 @@ export const Global = createGlobalStyle`
       padding-left: 0;
       padding-right: 0;
       padding-top: 0;
-      margin-bottom: 1.45rem;
+      margin-bottom: 1.208333333rem;
     }
     dd {
       margin-left: 0;
@@ -349,7 +349,7 @@ export const Global = createGlobalStyle`
       padding-left: 0;
       padding-right: 0;
       padding-top: 0;
-      margin-bottom: 1.45rem;
+      margin-bottom: 1.208333333rem;
     }
     p {
       margin-left: 0;
@@ -359,7 +359,7 @@ export const Global = createGlobalStyle`
       padding-left: 0;
       padding-right: 0;
       padding-top: 0;
-      margin-bottom: 1.45rem;
+      margin-bottom: 1.208333333rem;
     }
     figure {
       margin-left: 0;
@@ -369,7 +369,7 @@ export const Global = createGlobalStyle`
       padding-left: 0;
       padding-right: 0;
       padding-top: 0;
-      margin-bottom: 1.45rem;
+      margin-bottom: 1.208333333rem;
     }
     pre {
       margin-left: 0;
@@ -379,14 +379,14 @@ export const Global = createGlobalStyle`
       padding-left: 0;
       padding-right: 0;
       padding-top: 0;
-      margin-bottom: 1.45rem;
-      font-size: 0.85rem;
+      margin-bottom: 1.208333333rem;
+      font-size: 0.7083333333rem;
       line-height: 1.42;
       background: hsla(0, 0%, 0%, 0.04);
       border-radius: 3px;
       overflow: auto;
       word-wrap: normal;
-      padding: 1.45rem;
+      padding: 1.208333333rem;
     }
     table {
       margin-left: 0;
@@ -396,9 +396,9 @@ export const Global = createGlobalStyle`
       padding-left: 0;
       padding-right: 0;
       padding-top: 0;
-      margin-bottom: 1.45rem;
-      font-size: 1rem;
-      line-height: 1.45rem;
+      margin-bottom: 1.208333333rem;
+      font-size: 0.83333333rem;
+      line-height: 1.208333333rem;
       border-collapse: collapse;
       width: 100%;
     }
@@ -410,17 +410,17 @@ export const Global = createGlobalStyle`
       padding-left: 0;
       padding-right: 0;
       padding-top: 0;
-      margin-bottom: 1.45rem;
+      margin-bottom: 1.208333333rem;
     }
     blockquote {
-      margin-left: 1.45rem;
-      margin-right: 1.45rem;
+      margin-left: 1.208333333rem;
+      margin-right: 1.208333333rem;
       margin-top: 0;
       padding-bottom: 0;
       padding-left: 0;
       padding-right: 0;
       padding-top: 0;
-      margin-bottom: 1.45rem;
+      margin-bottom: 1.208333333rem;
     }
     form {
       margin-left: 0;
@@ -430,7 +430,7 @@ export const Global = createGlobalStyle`
       padding-left: 0;
       padding-right: 0;
       padding-top: 0;
-      margin-bottom: 1.45rem;
+      margin-bottom: 1.208333333rem;
     }
     noscript {
       margin-left: 0;
@@ -440,7 +440,7 @@ export const Global = createGlobalStyle`
       padding-left: 0;
       padding-right: 0;
       padding-top: 0;
-      margin-bottom: 1.45rem;
+      margin-bottom: 1.208333333rem;
     }
     iframe {
       margin-left: 0;
@@ -450,7 +450,7 @@ export const Global = createGlobalStyle`
       padding-left: 0;
       padding-right: 0;
       padding-top: 0;
-      margin-bottom: 1.45rem;
+      margin-bottom: 1.208333333rem;
     }
     hr {
       margin-left: 0;
@@ -460,7 +460,7 @@ export const Global = createGlobalStyle`
       padding-left: 0;
       padding-right: 0;
       padding-top: 0;
-      margin-bottom: calc(1.45rem - 1px);
+      margin-bottom: calc(1.208333333rem - 1px);
       background: hsla(0, 0%, 0%, 0.2);
       border: none;
       height: 1px;
@@ -473,7 +473,7 @@ export const Global = createGlobalStyle`
       padding-left: 0;
       padding-right: 0;
       padding-top: 0;
-      margin-bottom: 1.45rem;
+      margin-bottom: 1.208333333rem;
     }
     b {
       font-weight: bold;
@@ -488,7 +488,7 @@ export const Global = createGlobalStyle`
       font-weight: bold;
     }
     li {
-      margin-bottom: calc(1.45rem / 2);
+      margin-bottom: calc(1.208333333rem / 2);
     }
     ol li {
       padding-left: 0;
@@ -497,14 +497,14 @@ export const Global = createGlobalStyle`
       padding-left: 0;
     }
     li > ol {
-      margin-left: 1.45rem;
-      margin-bottom: calc(1.45rem / 2);
-      margin-top: calc(1.45rem / 2);
+      margin-left: 1.208333333rem;
+      margin-bottom: calc(1.208333333rem / 2);
+      margin-top: calc(1.208333333rem / 2);
     }
     li > ul {
-      margin-left: 1.45rem;
-      margin-bottom: calc(1.45rem / 2);
-      margin-top: calc(1.45rem / 2);
+      margin-left: 1.208333333rem;
+      margin-bottom: calc(1.208333333rem / 2);
+      margin-top: calc(1.208333333rem / 2);
     }
     blockquote *:last-child {
       margin-bottom: 0;
@@ -516,19 +516,19 @@ export const Global = createGlobalStyle`
       margin-bottom: 0;
     }
     li > p {
-      margin-bottom: calc(1.45rem / 2);
+      margin-bottom: calc(1.208333333rem / 2);
     }
     code {
       font-size: 0.85rem;
-      line-height: 1.45rem;
+      line-height: 1.208333333rem;
     }
     kbd {
       font-size: 0.85rem;
-      line-height: 1.45rem;
+      line-height: 1.208333333rem;
     }
     samp {
       font-size: 0.85rem;
-      line-height: 1.45rem;
+      line-height: 1.208333333rem;
     }
     abbr {
       border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);

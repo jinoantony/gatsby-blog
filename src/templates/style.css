@@ -7,7 +7,7 @@
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
 
-@import url('https://fonts.googleapis.com/css?family=Noticia+Text|Noto+Serif:400,700|Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Zilla+Slab:wght@400;500;700|Roboto+Slab&display=swap');
 
 *,
 *::before,
@@ -46,7 +46,7 @@ section {
 body {
   margin: 0;
   font-family: 'Source Sans Pro', 'Segoe UI', 'Helvetica Neue', 'Arial';
-  font-size: 1rem;
+  font-size: 0.7rem;
   font-weight: 400;
   line-height: 1.6;
   color: #212529;
@@ -435,7 +435,7 @@ section {
 body {
   margin: 0;
   font-family: 'Source Sans Pro', 'Segoe UI', 'Helvetica Neue', 'Arial';
-  font-size: 1rem;
+  font-size: 0.833333rem;
   font-weight: 400;
   line-height: 1.6;
   color: #212529;
@@ -10753,7 +10753,7 @@ html {
   }
   .col-md-8 {
     flex: 0 0 66.66667%;
-    max-width: 66.66667%;
+    max-width: 90.66667%;
   }
   .col-md-9 {
     flex: 0 0 75%;
@@ -11893,7 +11893,7 @@ body {
 
 .secondfont,
 .navbar-brand {
-  font-family: 'Noticia Text', serif;
+  font-family: 'Zilla Slab', serif;
 }
 
 img {
@@ -12624,9 +12624,10 @@ ol.list-featured li:before {
 
 article {
   font-family: 'sans-serif', 'Georgia';
-  font-size: 20px;
+  font-size: 1.1rem;
   line-height: 1.7;
 }
+
 article p,
 article pre,
 article figure,
@@ -12637,7 +12638,7 @@ article embed {
   margin-bottom: 2rem;
 }
 article.article-post blockquote {
-  padding-left: 40px;
+  padding-left: 25px;
   margin-left: 0px;
   font-style: italic;
   position: relative;
@@ -13520,11 +13521,12 @@ ul.ascii
 
 /*# sourceMappingURL=main.css.map */
 article {
-  font-family: 'Noto Serif', serif;
+  /* font-family: 'Noto Serif', serif; */
+  font-family: 'Zilla Slab', serif;
 }
 
 h1.post-title {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .navbar-links a::after {
@@ -13616,4 +13618,20 @@ body.dark :not(pre) > code[class*='language-'], body.dark pre[class*='language-'
   word-wrap: break-word;
   overflow-wrap: break-word;
   word-break: break-all;
+}
+
+html {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 1.05rem;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1200px) {
+  html {
+    font-size: 1.1rem;
+  }
 }
