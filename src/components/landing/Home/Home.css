@@ -138,7 +138,7 @@ body.dark .read-more, body.dark .latest-articles a:hover {
 
 @media only screen and (min-width: 601px) and (max-width: 800px) {
   .intro h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .intro h4 {
