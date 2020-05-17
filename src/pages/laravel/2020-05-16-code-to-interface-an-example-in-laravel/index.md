@@ -1,10 +1,11 @@
 ---
 slug: '/blog/code-to-interface-an-example-in-laravel'
-date: '2020-05-16'
+date: '2020-05-18'
 draft: false
 title: 'Code to Interface: An Example in Laravel'
 author: 'Jino Antony'
 category: 'Laravel'
+coverImage: 'interface.png'
 tag: 'Laravel'
 description: 'Code to an interface is a technique used in programming where you build your application based on abstractions(interface) and not concretions(classes).'
 ---
@@ -13,7 +14,7 @@ Code to an interface is a technique used in programming where you build your app
 
 If you are a programmer then you might have heard the phrases like **code to interfaces, not implementations**, **program to interfaces**, **use abstractions instead of concretion**, etc.
 
-It all refers to the same thing. We should code our application in such a way that it should depend on abstractions (interfaces) instead of concretion (classes).
+It all refers to the same thing. We should code our application in such a way that it should depend on abstractions (interfaces) instead of concretions (classes).
 
 ## Why?
 
@@ -21,7 +22,7 @@ This is my exact reaction when I first heard the phrase. Why would I use interfa
 
 Certainly **No**!!
 
-The one constant thing in this world that doesn't change is change itself or to put it, in other words, **change** is the only **constant**. 
+The one constant thing in this world that doesn't change is change itself, or to put it in other words, **change** is the only **constant**. 
 
 In the case of programming also there is no exception for this rule. Business requirements change over time and so does our code.
 
@@ -281,6 +282,10 @@ class AppServiceProvider extends ServiceProvider
 }
 ```
 
-What this does is, it reads the default logger from the config file, and binds it to the `Logger` interface. So whenever we request `Logger` interface, the container resolves it a returns the default logger instance.
+What this does is, it reads the default logger from the config file, and binds it to the `Logger` interface. So whenever we request `Logger` interface, the container resolves it and returns the default logger instance.
 
-Since the default logger is specified using `env()` helper we can use different loggers in different environments like `file` in `local` environment and `db` in `production`.
+Since the default logger is specified using `env()` helper we can use different loggers in different environments like `file` in `local` environment and `db` in `production` environment.
+
+## Conclusion
+
+Interfaces allow us to create loosely coupled code while providing a level of abstraction. It allows us to change our implementations at any time without changing the context they are used. So always code to an interface all the variable parts in your application.
