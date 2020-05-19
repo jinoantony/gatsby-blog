@@ -4,7 +4,7 @@ module.exports = {
 	author: 'Jino Antony',
 	url: 'https://jinoantony.com',
 	legalName: 'Jino Antony',
-	defaultDescription: 'Hello, I am Jino Antony, a backend developer based in Kerala, India. I\'m mostly experienced in PHP, Javascript and other web related technologies',
+	defaultDescription: 'I am a backend developer based in Kerala, India. I love all things related to web development. I\'m mostly experienced in PHP, Javascript and other web related technologies. I usually write articles related to web development.',
 	postsPerPage: 5,
 	paginationMaxLength: 7,
 	socialLinks: {
