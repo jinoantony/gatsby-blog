@@ -7,7 +7,7 @@
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
 
-@import url('https://fonts.googleapis.com/css?family=Zilla+Slab:wght@400;500;700|Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Zilla+Slab:wght@400;500;700|Roboto+Slab|Source+Serif+Pro&display=swap');
 
 *,
 *::before,
@@ -119,7 +119,7 @@ dd {
 
 blockquote {
   margin: 0 0 1rem;
-  border-left: 4px solid #00ab6b;
+  border-left: 4px solid #2f2f2f;
   padding: 0 20px;
   font-style: italic;
   color: rgba(0, 0, 0, 0.5);
@@ -12623,7 +12623,7 @@ ol.list-featured li:before {
 }
 
 article {
-  font-family: 'sans-serif', 'Georgia';
+  /* font-family: 'sans-serif', 'Georgia'; */
   font-size: 1.1rem;
   line-height: 1.7;
 }
@@ -13522,7 +13522,7 @@ ul.ascii
 /*# sourceMappingURL=main.css.map */
 article {
   /* font-family: 'Noto Serif', serif; */
-  font-family: 'Zilla Slab', serif;
+  font-family: 'Source Serif Pro', serif;
 }
 
 h1.post-title {
