@@ -21,7 +21,7 @@ export const SEO = ({
 	location = '',
 	thumbImage = Thumbnail,
 }) => {
-	let origin = ""
+	let origin = url
 
 	if (typeof window !== "undefined") {
 		origin = window.location.origin
