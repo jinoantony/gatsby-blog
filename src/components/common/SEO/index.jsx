@@ -73,7 +73,7 @@ export const SEO = ({
 			<meta property="og:description" content={description} />
 			<meta property="og:image" content={cardImage} />
 
-			<meta name="twitter:card" content="summary" />
+			<meta name="twitter:card" content="summary_large_image" />
 			<meta name="twitter:creator" content={socialLinks.twitter} />
 			<meta name="twitter:site" content={social.twitter} />
 			<meta name="twitter:title" content={title} />
