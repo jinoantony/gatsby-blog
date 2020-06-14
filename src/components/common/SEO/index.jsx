@@ -1,3 +1,4 @@
+/* eslint-disable prefer-destructuring */
 import React from 'react'
 import Helmet from 'react-helmet'
 import Thumbnail from 'Static/images/me.jpg'
@@ -20,6 +21,14 @@ export const SEO = ({
 	location = '',
 	thumbImage = Thumbnail,
 }) => {
+	let origin = ""
+
+	if (typeof window !== "undefined") {
+		origin = window.location.origin
+	}
+
+	const cardImage = origin + thumbImage
+
 	const structuredDataOrganization = `{ 
 		"@context": "http://schema.org",
 		"@type": "Organization",
@@ -56,20 +65,20 @@ export const SEO = ({
 	return (
 		<Helmet>
 			<meta name="description" content={description} />
-			<meta name="image" content={thumbImage} />
+			<meta name="image" content={cardImage} />
 
 			<meta property="og:url" content={`${url}${location}`} />
 			<meta property="og:type" content="website" />
 			<meta property="og:title" content={title} />
 			<meta property="og:description" content={description} />
-			<meta property="og:image" content={thumbImage} />
+			<meta property="og:image" content={cardImage} />
 
 			<meta name="twitter:card" content="summary" />
 			<meta name="twitter:creator" content={socialLinks.twitter} />
 			<meta name="twitter:site" content={social.twitter} />
 			<meta name="twitter:title" content={title} />
 			<meta name="twitter:description" content={description} />
-			<meta name="twitter:image" content={thumbImage} />
+			<meta name="twitter:image" content={cardImage} />
 			<script type="application/ld+json">{structuredDataOrganization}</script>
 			<link rel="publisher" href={socialLinks.google} />
 			<title>{title}</title>
