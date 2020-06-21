@@ -20,8 +20,12 @@ export const SEO = ({
 	description = defaultDescription,
 	location = '',
 	thumbImage = Thumbnail,
+	canonical = '',
 }) => {
 	let origin = url
+
+	// eslint-disable-next-line no-param-reassign
+	canonical = canonical || `${url}${location}`
 
 	if (typeof window !== "undefined") {
 		origin = window.location.origin
@@ -81,6 +85,7 @@ export const SEO = ({
 			<meta name="twitter:image" content={cardImage} />
 			<script type="application/ld+json">{structuredDataOrganization}</script>
 			<link rel="publisher" href={socialLinks.google} />
+			<link rel="canonical" href={canonical} />
 			<title>{title}</title>
 			<html lang="en" dir="ltr" />
 		</Helmet>
