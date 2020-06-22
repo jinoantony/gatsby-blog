@@ -7,6 +7,7 @@ author: 'Jino Antony'
 category: 'Laravel'
 tag: 'Laravel'
 firstLetter: true
+canonical: 'https://medium.com/@JinoAntony/multi-user-authentication-using-guards-in-laravel-5-6-f18b4e61bdde'
 description: 'User authentication in laravel is pretty much easy. Laravel ships with user authentication scaffolding out of the box. But how can we implement a multi user authentication? Let’s look into multi-user authentication using laravel guards.'
 ---
 

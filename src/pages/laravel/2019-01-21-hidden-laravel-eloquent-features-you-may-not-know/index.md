@@ -6,6 +6,7 @@ title: '10 Hidden Laravel Eloquent Features You May Not Know'
 author: 'Jino Antony'
 category: 'Laravel'
 tag: 'Laravel'
+canonical: 'https://medium.com/@JinoAntony/10-hidden-laravel-eloquent-features-you-may-not-know-efc8ccc58d9e'
 description: 'Laravel is a feature-rich framework. However, you cannot find all the available features in the official documentation. Here are some features that you may not know.'
 ---
 

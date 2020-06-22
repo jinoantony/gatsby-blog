@@ -21,6 +21,7 @@ export const SEO = ({
 	location = '',
 	thumbImage = Thumbnail,
 	canonical = '',
+	isArticle = false,
 }) => {
 	let origin = url
 
@@ -85,7 +86,7 @@ export const SEO = ({
 			<meta name="twitter:image" content={cardImage} />
 			<script type="application/ld+json">{structuredDataOrganization}</script>
 			<link rel="publisher" href={socialLinks.google} />
-			<link rel="canonical" href={canonical} />
+			{isArticle && <link rel="canonical" href={canonical} />}
 			<title>{title}</title>
 			<html lang="en" dir="ltr" />
 		</Helmet>
