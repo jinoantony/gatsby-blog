@@ -1,8 +1,7 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
-import Img from "gatsby-image"
-import { Layout, SEO } from '../components/common'
+import { graphql } from 'gatsby'
 import { Header } from 'Theme'
+import { Layout, SEO } from '../components/common'
 
 import './style.css'
 import Footer from '../components/theme/Footer'
@@ -11,7 +10,7 @@ import ScrollToTop from '../components/common/ScrollToTop'
 
 export default function Template({ data }) {
 	const post = data.markdownRemark
-	const articleClass = "article-post" + (post.frontmatter.firstLetter == true ? ' first-capital' : '')
+	const articleClass = `article-post${  post.frontmatter.firstLetter == true ? ' first-capital' : ''}`
 	let coverImage = null
 
 	if (post.frontmatter.coverImage) {
@@ -25,6 +24,8 @@ export default function Template({ data }) {
 				location={post.frontmatter.slug}
 				description={post.frontmatter.description}
 				thumbImage={coverImage ? coverImage.src : undefined}
+				canonical={post.frontmatter.canonical}
+				isArticle
 			/>
 			<Header />
 			<ScrollToTop />
@@ -60,13 +61,15 @@ export default function Template({ data }) {
 			<div className="container pt-4 pb-4" style={{ maxWidth: '760px' }}>
 				<div className="row justify-content-center">
 					<div className="col-md-8 col-lg-12">
-						{coverImage && <CustomImg 
-							fluid={coverImage} 
-							alt={post.frontmatter.title}
-							title={post.frontmatter.title}
-							style={{'marginBottom': '7px'}}
-							caption={post.frontmatter.coverImageTitle}
-						/>}
+						{coverImage && (
+							<CustomImg 
+								fluid={coverImage} 
+								alt={post.frontmatter.title}
+								title={post.frontmatter.title}
+								style={{'marginBottom': '7px'}}
+								caption={post.frontmatter.coverImageTitle}
+							/>
+						)}
 						<article
 							className={articleClass}
 							dangerouslySetInnerHTML={{ __html: post.html }}
@@ -74,7 +77,7 @@ export default function Template({ data }) {
 					</div>
 				</div>
 			</div>
-			<Footer/>
+			<Footer />
 		</Layout>
 	)
 }
@@ -86,6 +89,7 @@ export const postQuery = graphql`
 			frontmatter {
 				slug
 				title
+				canonical
 				author
 				date
 				firstLetter

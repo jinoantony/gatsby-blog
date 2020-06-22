@@ -38,6 +38,15 @@ module.exports = {
 				plugins: [
 					`gatsby-remark-reading-time`,
 					{
+						resolve: `gatsby-remark-images`,
+						options: {
+						  // It's important to specify the maxWidth (in pixels) of
+						  // the content container as this plugin uses this as the
+						  // base for generating different widths of each image.
+						  	maxWidth: 590,
+						},
+					},
+					{
 						resolve: "gatsby-remark-embed-gist",
 						options: {
 							// Optional:
@@ -107,7 +116,7 @@ module.exports = {
 							prompt: {
 								user: 'root',
 								host: 'localhost',
-								global: true,
+								global: false,
 							},
 						},
 					},

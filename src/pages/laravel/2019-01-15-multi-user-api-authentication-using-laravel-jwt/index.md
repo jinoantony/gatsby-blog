@@ -6,6 +6,7 @@ title: 'Multi-User API Authentication Using Laravel JWT'
 author: 'Jino Antony'
 category: 'Laravel'
 tag: 'Laravel'
+canonical: 'https://medium.com/@JinoAntony/multi-user-api-authentication-using-laravel-jwt-8ae572b0c4cf'
 description: 'RESTful API development using Laravel is quite easy. Laravel provides built-in support for API development using Laravel Passport and a rich ecosystem with tons of packages makes development a breeze.'
 ---
 

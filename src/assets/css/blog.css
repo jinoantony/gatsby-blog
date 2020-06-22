@@ -112,7 +112,7 @@ a.time {
   color: #b5b5b5;
   font-family: Montserrat, Arial, Sans-Serif;
   font-size: 15px;
-  letter-spacing: -1px;
+  /* letter-spacing: -1px; */
   padding: 0 8px;
 }
 

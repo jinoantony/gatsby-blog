@@ -20,7 +20,7 @@ const Blog = ({ data, pageContext }) => (
 			currentPage={pageContext.currentPage}
 			maxLength={pageContext.maxLength} 
 		/>
-		<Footer/>
+		<Footer />
 	</Layout>
 )
 
