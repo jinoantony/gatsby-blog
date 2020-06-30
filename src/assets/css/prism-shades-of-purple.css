@@ -206,3 +206,8 @@
     background-color: #e8e8e8;
     color: black;
 }
+
+body .article-post pre.language-text code.language-text {
+    color: #bfbdba;
+    background-color: unset;
+}
