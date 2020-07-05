@@ -44,7 +44,7 @@ In this article, we are going to discuss only the **Check handlers** phase of th
 
 ## setImmediate()
 
-`setImmediate(callback[, ...args])` takes a `callback`  and add it to the event queue( specifially the immediate queue).
+`setImmediate(callback[, ...args])` takes a `callback`  and add it to the event queue( specifically the immediate queue).
 
 ```js
 setImmediate(() => console.log('Queued using setImmediate'))
