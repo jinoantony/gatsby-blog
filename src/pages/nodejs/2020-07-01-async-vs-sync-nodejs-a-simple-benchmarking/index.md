@@ -1,6 +1,6 @@
 ---
 slug: '/blog/async-vs-sync-nodejs-a-simple-benchmark'
-date: '2020-07-01'
+date: '2020-07-05'
 draft: false
 title: 'Async vs Sync NodeJs: A Simple Benchmark'
 author: 'Jino Antony'
@@ -90,7 +90,7 @@ Waiting:       90 1783 414.4   1804    3655
 Total:         90 1783 414.5   1804    3655
 ```
 
-## Async benchmarking
+## Async mode benchmark
 
 Now let's benchmark the asynchronous mode.
 
