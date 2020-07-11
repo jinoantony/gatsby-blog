@@ -1,0 +1,56 @@
+.project-container {
+    max-width: 764px;
+    margin: 0 auto;
+}
+
+.project {
+    display: flex;
+    padding: 26px 20px;
+    border-radius: 17px;
+    border: 1px solid #eee;
+    box-shadow: 13px 10px 21px -4px rgba(0,0,0,0.28);
+}
+
+.project-image {
+    max-width: 330px;
+    min-width: 250px;
+}
+
+.project-image img {
+    margin-bottom: 0px;
+}
+
+.project .description {
+    margin-left: 25px;
+}
+
+.project-title {
+    margin-bottom: 20px;
+    color: #252424;
+    font-size: 1.5rem;
+}
+
+.breif {
+    font-size: 1rem;
+    color: #737373;
+}
+
+.description a.github {
+    color: white;
+    background-color: #333232;
+    padding: 10px;
+    border-radius: 11px;
+    display: inline-block;
+    margin-top: 12px;
+    text-decoration: none;
+}
+
+a.github:hover {
+    color: #c3c0c0;
+}
+
+a.github svg {
+    fill: white;
+    margin-right: 10px;
+    margin-left: 8px;
+}

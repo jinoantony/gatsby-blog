@@ -20,7 +20,7 @@ module.exports = {
 		'react/forbid-prop-types': 0,
 		'react/require-default-props': 0,
 		camelcase: 0,
-		indent: [2, 'tab'],
+		indent: [4, 'space'],
 		'no-tabs': 0,
 		'react/jsx-indent': 0,
 		'no-console': 0,
