@@ -9,6 +9,7 @@
     border-radius: 17px;
     border: 1px solid #eee;
     box-shadow: 13px 10px 21px -4px rgba(0,0,0,0.28);
+    margin-bottom: 40px;
 }
 
 .project-image {
@@ -41,7 +42,7 @@
     padding: 10px;
     border-radius: 11px;
     display: inline-block;
-    margin-top: 12px;
+    margin-top: 15px;
     text-decoration: none;
 }
 
@@ -53,6 +54,30 @@ a.github svg {
     fill: white;
     margin-right: 10px;
     margin-left: 8px;
+}
+
+
+body.dark .project-title {
+    color: #d0d0d0;
+}
+
+body.dark .project {
+    background-color: #3e3d3d96;
+    box-shadow: none;
+    border: none;
+}
+
+body.dark .description a.github {
+    color: black;
+    background-color: white;
+}
+
+body.dark a.github svg {
+    fill: black;
+}
+
+body.dark .breif {
+    color: #929292;
 }
 
 @media only screen and (max-width: 550px) {
