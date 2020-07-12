@@ -54,3 +54,48 @@ a.github svg {
     margin-right: 10px;
     margin-left: 8px;
 }
+
+@media only screen and (max-width: 550px) {
+    .project-container {
+        padding: 2% 5%;
+    }
+
+    .project {
+        flex-direction: column;
+        padding: 12px;
+        border-radius: 20px;
+    }
+
+    .project-image {
+        min-width: unset;
+        max-width: unset;
+    }
+
+    .project .description {
+        margin-left: 0px;
+        padding: 12px;
+    }
+
+    .project-title {
+        margin-bottom: 6px;
+    }
+
+    .breif {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (min-width: 551px) and (max-width: 800px) {
+    .project-container {
+        padding: 2% 5%;
+    }
+
+    .project-image {
+        max-width: 340px;
+        min-width: 180px;
+    }
+
+    .project-title {
+        margin-bottom: 5px;
+    }
+}
