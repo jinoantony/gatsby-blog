@@ -33,6 +33,13 @@ module.exports = {
 			},
 		},
 		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				name: `markdown`,
+				path: `${__dirname}/src/components/landing/Projects/markdown/`
+			}
+		},
+		{
 			resolve: 'gatsby-transformer-remark',
 			options: {
 				plugins: [
