@@ -147,18 +147,15 @@ module.exports = {
 			},
 		},
 		{
-			resolve: 'gatsby-plugin-favicon',
+			resolve: 'gatsby-plugin-favicons',
 			options: {
 				logo: './static/favicon/me.jpg',
-				injectHTML: true,
 				icons: {
 					android: true,
 					appleIcon: true,
 					appleStartup: true,
 					coast: false,
 					favicons: true,
-					firefox: true,
-					twitter: false,
 					yandex: false,
 					windows: false,
 				},
