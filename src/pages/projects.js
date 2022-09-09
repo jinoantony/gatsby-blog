@@ -4,7 +4,7 @@ import { Header } from 'Theme'
 import Projects from '../components/landing/Projects'
 import Footer from '../components/theme/Footer'
 
-export default () => (
+const ProjectPage = () => (
 	<Layout>
 		<SEO />
 		<Header />
@@ -12,3 +12,5 @@ export default () => (
 		<Footer />
 	</Layout>
 )
+
+export default ProjectPage

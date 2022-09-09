@@ -13,7 +13,6 @@ module.exports = {
 		siteUrl: config.url,
 	},
 	plugins: [
-		'gatsby-plugin-react-helmet',
 		'gatsby-plugin-sitemap',
 		{
 			resolve: 'gatsby-plugin-use-dark-mode',
@@ -144,21 +143,6 @@ module.exports = {
 			options: {
 				trackingId: config.googleAnalyticsID,
 				head: true,
-			},
-		},
-		{
-			resolve: 'gatsby-plugin-favicons',
-			options: {
-				logo: './static/favicon/me.jpg',
-				icons: {
-					android: true,
-					appleIcon: true,
-					appleStartup: true,
-					coast: false,
-					favicons: true,
-					yandex: false,
-					windows: false,
-				},
 			},
 		},
 		{
