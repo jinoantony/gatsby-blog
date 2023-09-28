@@ -1,10 +1,11 @@
 ---
 title: "BunJs a New JS Runtime"
-date: "2022-09-10"
+date: "2023-09-28"
 draft: false
 slug: "/blog/bunjs-a-new-js-runtime"
 tag: "Javascript"
 author: "Jino Antony"
+coverImage: "bunjs.webp"
 description: "New frameworks and libraries are not a new thing in the Javascript ecosystem. So what makes Bun different from other libraries/framework? Let's find out."
 ---
 
