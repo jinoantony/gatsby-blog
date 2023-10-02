@@ -9,9 +9,9 @@ coverImage: "bunjs.webp"
 description: "New frameworks and libraries are not a new thing in the Javascript ecosystem. So what makes Bun different from other libraries/framework? Let's find out."
 ---
 
-New frameworks and libraries are not a new thing in the Javascript ecosystem. Infact new JS libraries are released almost every week! So what makes Bun different from other libraries/framework? Let's find out.
+New frameworks and libraries are not a new thing in the Javascript ecosystem. In fact, new JS libraries are released almost every week! So what makes Bun different from other libraries/frameworks? Let's find out.
 
-# What is BunJs?
+## What is BunJs?
 
 [Bun](https://bun.sh) is a "fast all-in-one javascript runtime". It is similar to Node or Deno. It was created by [Jarred Sumner](https://twitter.com/jarredsumner). Bun started out as a javascript webserver and later evolved into being a complete rewrite of the javascript ecosystem.
 
@@ -23,9 +23,9 @@ Bun was built from scratch to focus on three main things:
 - Provide new levels of performance
 - Being a great and complete tool
 
-Bun is written in [ZIG](https://ziglang.org/) language and uses the JavascriptCore engine instead of V8 which was used in node and deno. It is designed as a drop-in replacement for nodejs
+Bun is written in [ZIG](https://ziglang.org/) language and uses the JavascriptCore engine instead of V8 which was used in node and deno. It is designed as a drop-in replacement for nodejs.
 
-# Why BunJs?
+## Why BunJs?
 
 Let's take a look into the why part of bun, why it exists? 
 
@@ -33,7 +33,7 @@ According to the official [site](https://bun.sh/),
 
 > The goal of Bun is to run most of the world's server-side JavaScript and provide tools to improve performance, reduce complexity, and multiply developer productivity.
 
-So you can say Bun is an all in one package for javascript development. This make Bun stand out from its alternatives like node and deno where we need some external tools/packages for the development.
+So you can say Bun is an all-in-one package for JavaScript development. This makes Bun stand out from its alternatives like node and deno where we need some external tools/packages for the development.
 
 The built-in features offered by Bun are:
 
@@ -45,7 +45,7 @@ The built-in features offered by Bun are:
 - env support
 - Sqlite client
 
-# Blazing Fast
+## Blazing Fast
 
 The standout feature of bun is its blazing fast speed compared to its alternatives. It is said to be [4x times faster than node.js](https://twitter.com/jarredsumner/status/1499225725492076544). We can verify this ourselves with a simple script.
 
@@ -181,11 +181,11 @@ It have only one dependency `express`.
 
 Running benchmark produced the following results
 
-![](bun-package-manager-benchmark.png "Benchmark results")
+![Bun package manager benchmark](bun-package-manager-benchmark.png "Benchmark results")
 
 As per the benchmark results `bun install` is 26x times faster than `npm install` and 23x times faster than `yarn install`
 
-# Future of Bun
+## Future of Bun
 
 The future of Bun looks promising. The JavaScript community is really excited about the new kid in town. The success of any new technology depends on community adaptation. People usually don't like to change things they have the most comfort in unless the change brings new levels of comfort. Similar is the case with technology. But in the case of Bun, the features, especially the speed, might be a huge factor in its adaptation. Also, even if we don't need to replace Node.js entirely, we can still use Bun as a package manager, test runner, transpiler, etc.
 
