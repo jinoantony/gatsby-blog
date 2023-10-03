@@ -6,6 +6,7 @@
   "author": "Jino Antony",
   "dependencies": {
     "babel-plugin-styled-components": "^2.0.7",
+    "decap-cms-app": "^3.0.7",
     "dotenv": "^16.0.2",
     "formik": "^2.2.9",
     "gatsby": "^4.22.0",
@@ -14,6 +15,7 @@
     "gatsby-plugin-canonical-urls": "^4.22.0",
     "gatsby-plugin-google-analytics": "^4.22.0",
     "gatsby-plugin-manifest": "^4.22.0",
+    "gatsby-plugin-netlify-cms": "^7.12.0",
     "gatsby-plugin-nprogress": "^4.22.0",
     "gatsby-plugin-offline": "^5.22.0",
     "gatsby-plugin-sharp": "^4.22.0",
