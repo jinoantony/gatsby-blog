@@ -1,12 +1,14 @@
 ---
-title: "BunJs a New JS Runtime"
-date: "2023-09-28"
 draft: false
-slug: "/blog/bunjs-a-new-js-runtime"
-tag: "Javascript"
-author: "Jino Antony"
-coverImage: "bunjs.webp"
-description: "New frameworks and libraries are not a new thing in the Javascript ecosystem. So what makes Bun different from other libraries/framework? Let's find out."
+title: BunJs a New JS Runtime
+slug: /blog/bunjs-a-new-js-runtime
+tag: Javascript
+author: Jino Antony
+date: 2023-09-28
+description: New frameworks and libraries are not a new thing in the Javascript
+  ecosystem. So what makes Bun different from other libraries/framework? Let's
+  find out.
+coverImage: bunjs.webp
 ---
 
 New frameworks and libraries are not a new thing in the Javascript ecosystem. In fact, new JS libraries are released almost every week! So what makes Bun different from other libraries/frameworks? Let's find out.
@@ -125,7 +127,7 @@ export default {
 }
 ```
 
-It's pretty simple to create an http server in Bun. The script need to make a default export with an object with a `port` and `fetch` function, it will automatically creates an http server listening on the specified port.
+It's pretty simple to create an http server in Bun. The script needs to make a default export with an object with a `port` and `fetch` function, it will automatically creates an http server listening on the specified port.
 
 ```text
 Concurrency Level:      20

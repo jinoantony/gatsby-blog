@@ -5,13 +5,9 @@ draft: false
 slug: "/blog/optional-chaining-in-javascript"
 tag: "Javascript"
 author: "Jino Antony"
-description: "Optional Chaining is a new feature available in Javascript. 
-It is actually a ES2020 specification. Optional chaining allows developers to 
-write code which are more readable and less verbose."
 coverImage: "chain.jpg"
 coverImageTitle: "Photo by Matthew Lancaster on Unsplash"
-tags:
-  - "Tag"
+description: "Optional Chaining is a new feature available in Javascript. It is actually a ES2020 specification. Optional chaining allows developers to write code which are more readable and less verbose."
 ---
 
 Optional Chaining is a new feature available in Javascript. 

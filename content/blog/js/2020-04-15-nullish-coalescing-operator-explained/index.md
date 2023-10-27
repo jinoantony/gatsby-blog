@@ -1,6 +1,6 @@
 ---
 title: "Nullish Coalescing Operator Explained"
-date: "2020-04-19"
+date: 2020-04-19
 draft: false
 slug: "/blog/nullish-coalescing-operator-explained"
 tag: "Javascript"

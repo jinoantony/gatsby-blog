@@ -25,10 +25,17 @@ module.exports = {
 		},
 		'gatsby-plugin-styled-components',
 		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				name: `images`,
+				path: `${__dirname}/static/images`
+			}
+		},
+		{
 			resolve: 'gatsby-source-filesystem',
 			options: {
 				name: 'pages',
-				path: `${__dirname}/src/pages`,
+				path: `${__dirname}/content/blog`,
 			},
 		},
 		{
@@ -43,6 +50,20 @@ module.exports = {
 			options: {
 				plugins: [
 					`gatsby-remark-reading-time`,
+					{
+						resolve: `gatsby-remark-relative-images`,
+						options: {
+						  // [Optional] The root of "media_folder" in your config.yml
+						  // Defaults to "static"
+						  staticFolderName: 'static',
+						  // [Optional] Include the following fields, use dot notation for nested fields
+						  // All fields are included by default
+						//   include: ['featured'],
+						//   // [Optional] Exclude the following fields, use dot notation for nested fields
+						//   // No fields are excluded by default
+						//   exclude: ['featured.skip'],
+						},
+					},
 					{
 						resolve: `gatsby-remark-images`,
 						options: {
@@ -170,5 +191,6 @@ module.exports = {
 				},
 			},
 		},
+		'gatsby-plugin-netlify-cms',
 	],
 }
