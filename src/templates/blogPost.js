@@ -50,7 +50,7 @@ export default function Template({ data }) {
 										fontWeight: '400',
 									}}
 								>
-									Posted by {post.frontmatter.author} on {post.frontmatter.date}
+									Posted by {post.frontmatter.author} on {getFormattedDate(post.frontmatter.date)}
 								</h4>
 							</div>
 						</div>
@@ -80,6 +80,15 @@ export default function Template({ data }) {
 			<Footer />
 		</Layout>
 	)
+}
+
+const getFormattedDate = date => {
+
+	let formattedDate = new Date(date)
+		.toISOString()
+		.split("T")[0];
+
+	return formattedDate;
 }
 
 export const postQuery = graphql`
