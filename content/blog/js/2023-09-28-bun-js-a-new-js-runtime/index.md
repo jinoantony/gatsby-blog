@@ -5,9 +5,7 @@ slug: /blog/bunjs-a-new-js-runtime
 tag: Javascript
 author: Jino Antony
 date: 2023-09-28
-description: New frameworks and libraries are not a new thing in the Javascript
-  ecosystem. So what makes Bun different from other libraries/framework? Let's
-  find out.
+description: New frameworks and libraries are not a new thing in the Javascript ecosystem. So what makes Bun different from other libraries/framework? Let's find out.
 coverImage: bunjs.webp
 ---
 
